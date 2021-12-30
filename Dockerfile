@@ -7,6 +7,9 @@ RUN git config --global user.name "admin" \
 
 COPY ./ /UiTest
 
+
+RUN apt install --reinstall gcc 
+
 RUN pip install -U pytest
 RUN pip install -U pytest-html
 RUN pip install -U allure-pytest
