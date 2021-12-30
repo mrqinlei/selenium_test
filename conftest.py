@@ -20,7 +20,7 @@ driver = None
 def drivers(request):
     global driver
     if driver is None:
-        options = webdriver.ChromeOptions('../chromedriver')
+        options = webdriver.ChromeOptions()
         # 设置不打开Chrome浏览器
         options.add_argument('headless')
         options.add_argument('no-sandbox')
@@ -103,7 +103,8 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     }
     print(result)
     if result['failed'] or result['error']:
-        send_report()
+        # send_report()
+        pass
 
 
 def _capture_screenshot():
