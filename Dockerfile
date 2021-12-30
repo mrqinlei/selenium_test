@@ -7,7 +7,12 @@ RUN git config --global user.name "admin" \
 
 COPY ./ /UiTest
 
-RUN ["pip", "install", "--no-cache-dir",  "-r",  "./requirements.txt"]
+RUN pip install -U pytest
+RUN pip install -U pytest-html
+RUN pip install -U allure-pytest
+RUN pip install -U PyYAML
+RUN pip install -U selenium
+RUN pip install -U zmail
 
 
 
