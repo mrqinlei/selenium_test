@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: __init__() takes 1 positional argument but 2 were given",
+      "children" : [ {
+        "name" : "test_001",
+        "uid" : "c71e26503a436098",
+        "parentUid" : "b2a7a9f04683f02bdd7e3d3ba61646c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640849204475,
+          "stop" : 1640849204475,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2a7a9f04683f02bdd7e3d3ba61646c8"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
