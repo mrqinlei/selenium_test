@@ -8,7 +8,6 @@ RUN git config --global user.name "admin" \
 COPY ./ /UiTest
 
 
-RUN yum install --reinstall gcc 
 RUN pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ -U selenium 
 RUN pip install -U pytest
 RUN pip install -U pytest-html
