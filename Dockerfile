@@ -11,7 +11,7 @@ RUN pip install -U pytest
 RUN pip install -U pytest-html
 RUN pip install -U allure-pytest
 RUN pip install -U PyYAML
-RUN pip install -U selenium
+RUN pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ -U selenium 
 RUN pip install -U zmail
 
 
