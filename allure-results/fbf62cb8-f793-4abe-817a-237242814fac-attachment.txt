@@ -1,0 +1,2 @@
+Fri, 31 Dec 2021 18:07:31-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_login.py::TestLogin::test_001
+Fri, 31 Dec 2021 18:07:31-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: failed

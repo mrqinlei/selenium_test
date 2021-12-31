@@ -3,22 +3,22 @@
   "children" : [ {
     "name" : "qinleideMacBook-Pro.local",
     "children" : [ {
-      "name" : "5179-MainThread",
+      "name" : "14108-MainThread",
       "children" : [ {
         "name" : "test_001",
-        "uid" : "40fe736f86828042",
-        "parentUid" : "099d422286ddf743382b46856738c553",
-        "status" : "passed",
+        "uid" : "4f9e9fd6aa95b556",
+        "parentUid" : "b495d4d14ce683c33d5b963c07b8eff9",
+        "status" : "broken",
         "time" : {
-          "start" : 1640920481370,
-          "stop" : 1640920502994,
-          "duration" : 21624
+          "start" : 1640945242286,
+          "stop" : 1640945242286,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "099d422286ddf743382b46856738c553"
+      "uid" : "b495d4d14ce683c33d5b963c07b8eff9"
     } ],
     "uid" : "da0a2732d233372e063156cf13db7e9d"
   } ],

@@ -5,6 +5,7 @@ import os
 
 import pytest
 import allure
+import selenium
 from py.xml import html
 from selenium import webdriver
 
@@ -28,8 +29,11 @@ def drivers(request):
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--headless')
 
-        driver = webdriver.Remote("http://localhost:4444/wd/hub",
-                                  webdriver.DesiredCapabilities.CHROME.copy(chrome_options=chrome_options))
+        # driver = webdriver.Remote("http://localhost:4444/wd/hub",
+        #                           webdriver.DesiredCapabilities.CHROME.copy(),)
+
+        driver = webdriver.Remote(desired_capabilities=DesiredCapabilities().CHROME,
+                                  command_executor='http://127.0.0.1:4444',options=chrome_options)
 
     def fn():
         driver.quit()

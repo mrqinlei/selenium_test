@@ -1,5 +1,0 @@
-INFO     utils.logger:webpage.py:32 打开网页：https://ezone.ezone-i.work
-INFO     utils.logger:webpage.py:70 点击元素：('class', '_buttonLink_1fhgk_165')
-INFO     utils.logger:webpage.py:64 输入文本：qinlei
-INFO     utils.logger:webpage.py:64 输入文本：jiandanyidian123456
-INFO     utils.logger:webpage.py:70 点击元素：('css', 'div._pageRoot_vnh37_51:nth-child(2) div._root_vnh37_1 div.ant-tabs.ant-tabs-top.ant-tabs-centered._tabsRoot_vnh37_37 div.ant-tabs-content-holder div.ant-tabs-content.ant-tabs-content-top div.ant-tabs-tabpane.ant-tabs-tabpane-active:nth-child(1) form.ant-legacy-form.ant-legacy-form-horizontal._form_vnh37_19 div.ant-row.ant-legacy-form-item:nth-child(4) div.ant-col.ant-legacy-form-item-control-wrapper div.ant-legacy-form-item-control span.ant-legacy-form-item-children button.ant-btn.ant-btn-primary.ant-btn-block > span:nth-child(1)')
