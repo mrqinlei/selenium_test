@@ -1,8 +1,0 @@
-Wed, 22 Dec 2021 12:19:24-utils.logger-logger.py-[line:42]-ERROR-[日志信息]: 模块直接执行打印日志
-Wed, 22 Dec 2021 12:19:31-utils.logger-webpage.py-[line:32]-INFO-[日志信息]: 打开网页：https://www.baidu.com
-Wed, 22 Dec 2021 12:19:32-utils.logger-webpage.py-[line:64]-INFO-[日志信息]: 输入文本：selenium
-Wed, 22 Dec 2021 12:19:35-utils.logger-webpage.py-[line:70]-INFO-[日志信息]: 点击元素：('id', 'su')
-Wed, 22 Dec 2021 12:19:36-utils.logger-test_search.py-[line:27]-INFO-[日志信息]: <re.Match object; span=(1134, 1142), match='selenium'>
-Wed, 22 Dec 2021 12:19:37-utils.logger-webpage.py-[line:32]-INFO-[日志信息]: 打开网页：https://www.baidu.com
-Wed, 22 Dec 2021 12:19:38-utils.logger-webpage.py-[line:64]-INFO-[日志信息]: 输入文本：selenium
-Wed, 22 Dec 2021 12:19:39-utils.logger-test_search.py-[line:35]-INFO-[日志信息]: ['selenium', 'selenium怎么读', 'selenium自动化测试框架', 'selenium面试题', 'selenium自动化测试', 'selenium安装教程', 'selenium是什么意思', 'selenium菜鸟教程', 'selenium自动化测试实战', 'selenium硒片的功效']

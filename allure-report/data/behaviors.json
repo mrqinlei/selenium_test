@@ -6,13 +6,13 @@
       "name" : "点击登录用例",
       "children" : [ {
         "name" : "test_001",
-        "uid" : "c71e26503a436098",
+        "uid" : "40fe736f86828042",
         "parentUid" : "0f0bc605f4c0402290131f5ee3f9aae6",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1640849204475,
-          "stop" : 1640849204475,
-          "duration" : 0
+          "start" : 1640920481370,
+          "stop" : 1640920502994,
+          "duration" : 21624
         },
         "flaky" : false,
         "newFailed" : false,

@@ -1,0 +1,9 @@
+Fri, 31 Dec 2021 11:14:41-utils.logger-webpage.py-[line:32]-INFO-[日志信息]: 打开网页：https://ezone.ezone-i.work
+Fri, 31 Dec 2021 11:14:41-utils.logger-conftest.py-[line:59]-INFO-[日志信息]: nodeid：TestCase/test_login.py::TestLogin::test_001
+Fri, 31 Dec 2021 11:14:41-utils.logger-conftest.py-[line:60]-INFO-[日志信息]: 运行结果: passed
+Fri, 31 Dec 2021 11:14:45-utils.logger-webpage.py-[line:70]-INFO-[日志信息]: 点击元素：('class', '_buttonLink_1fhgk_165')
+Fri, 31 Dec 2021 11:14:47-utils.logger-webpage.py-[line:64]-INFO-[日志信息]: 输入文本：qinlei
+Fri, 31 Dec 2021 11:14:48-utils.logger-webpage.py-[line:64]-INFO-[日志信息]: 输入文本：jiandanyidian123456
+Fri, 31 Dec 2021 11:14:50-utils.logger-webpage.py-[line:70]-INFO-[日志信息]: 点击元素：('css', 'div._pageRoot_vnh37_51:nth-child(2) div._root_vnh37_1 div.ant-tabs.ant-tabs-top.ant-tabs-centered._tabsRoot_vnh37_37 div.ant-tabs-content-holder div.ant-tabs-content.ant-tabs-content-top div.ant-tabs-tabpane.ant-tabs-tabpane-active:nth-child(1) form.ant-legacy-form.ant-legacy-form-horizontal._form_vnh37_19 div.ant-row.ant-legacy-form-item:nth-child(4) div.ant-col.ant-legacy-form-item-control-wrapper div.ant-legacy-form-item-control span.ant-legacy-form-item-children button.ant-btn.ant-btn-primary.ant-btn-block > span:nth-child(1)')
+Fri, 31 Dec 2021 11:15:02-utils.logger-conftest.py-[line:59]-INFO-[日志信息]: nodeid：TestCase/test_login.py::TestLogin::test_001
+Fri, 31 Dec 2021 11:15:02-utils.logger-conftest.py-[line:60]-INFO-[日志信息]: 运行结果: passed

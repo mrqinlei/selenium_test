@@ -12,7 +12,8 @@ from config.conf import cm
 from common.readconfig import ini
 from utils.times import timestamp
 from utils.send_mail import send_report
-
+from selenium.webdriver.chrome.options import Options
+from utils.logger import log
 driver = None
 
 
@@ -20,11 +21,12 @@ driver = None
 def drivers(request):
     global driver
     if driver is None:
-        options = webdriver.ChromeOptions()
-        # 设置不打开Chrome浏览器
-        options.add_argument('headless')
-        options.add_argument('no-sandbox')
-        driver = webdriver.Chrome(chrome_options=options)
+        chrome_options = Options()
+        chrome_options.add_argument('--window-size=1920,1080')  # 设置窗口界面大小
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--headless')
+
+        driver = webdriver.Chrome(chrome_options=chrome_options)
 
     def fn():
         driver.quit()
@@ -54,6 +56,9 @@ def pytest_runtest_makereport(item):
                        'onclick="window.open(this.src)" align="right"/></div>' % screen_img
                 extra.append(pytest_html.extras.html(html))
         report.extra = extra
+        log.info('nodeid：%s'%report.nodeid)
+        log.info('运行结果: %s'%report.outcome)
+
 
 
 def pytest_html_results_table_header(cells):
@@ -105,6 +110,7 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     if result['failed'] or result['error']:
         # send_report()
         pass
+
 
 
 def _capture_screenshot():

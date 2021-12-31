@@ -2,20 +2,19 @@
   "ff217695fb42de38478bbbc7ff27ac1b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c71e26503a436098",
-      "status" : "broken",
-      "statusDetails" : "TypeError: __init__() takes 1 positional argument but 2 were given",
+      "uid" : "40fe736f86828042",
+      "status" : "passed",
       "time" : {
-        "start" : 1640849204475,
-        "stop" : 1640849204475,
-        "duration" : 0
+        "start" : 1640920481370,
+        "stop" : 1640920502994,
+        "duration" : 21624
       }
     } ]
   }

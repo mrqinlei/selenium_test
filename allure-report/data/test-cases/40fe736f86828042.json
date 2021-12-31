@@ -1,0 +1,132 @@
+{
+  "uid" : "40fe736f86828042",
+  "name" : "test_001",
+  "fullName" : "TestCase.test_login.TestLogin#test_001",
+  "historyId" : "ff217695fb42de38478bbbc7ff27ac1b",
+  "time" : {
+    "start" : 1640920481370,
+    "stop" : 1640920502994,
+    "duration" : 21624
+  },
+  "description" : "点击登录",
+  "descriptionHtml" : "<p>点击登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "drivers",
+    "time" : {
+      "start" : 1640920475084,
+      "stop" : 1640920476272,
+      "duration" : 1188
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "open_ezone",
+    "time" : {
+      "start" : 1640920476273,
+      "stop" : 1640920481368,
+      "duration" : 5095
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "点击登录",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fec9a5992d44c4c6",
+      "name" : "log",
+      "source" : "fec9a5992d44c4c6.txt",
+      "type" : "text/plain",
+      "size" : 890
+    }, {
+      "uid" : "207a81449c6939c9",
+      "name" : "stderr",
+      "source" : "207a81449c6939c9.txt",
+      "type" : "text/plain",
+      "size" : 1592
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "drivers::fn",
+    "time" : {
+      "start" : 1640920502998,
+      "stop" : 1640920503086,
+      "duration" : 88
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "点击登录用例"
+  }, {
+    "name" : "feature",
+    "value" : "测试简单云登录模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "qinleideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "5179-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "40fe736f86828042.json",
+  "parameterValues" : [ ]
+}

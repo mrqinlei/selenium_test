@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 import sys
 import subprocess
+import os
 
 WIN = sys.platform.startswith('win')
 
@@ -11,11 +12,11 @@ def main():
     steps = [
         "venv\\Script\\activate" if WIN else "source venv/bin/activate",
         "pytest --alluredir allure-results --clean-alluredir",
-        "allure generate allure-results -c -o allure-report"
+        "allure generate allure-results -c -o allure-report",
         # "allure open allure-report"
     ]
     for step in steps:
-        subprocess.call("call " + step if WIN else step, shell=True)
+        subprocess.run("call " + step if WIN else step, shell=True)
 
 
 if __name__ == "__main__":

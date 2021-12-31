@@ -53,7 +53,7 @@ class ConfigManager(object):
         log_dir = os.path.join(self.BASE_DIR, 'logs')
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
-        return os.path.join(log_dir, '{}.log'.format(dt_strftime()))
+        return os.path.join(log_dir, '{}.log'.format(dt_strftime("%Y-%m-%d--%H:%M")))
 
     @property
     def ini_file(self):
