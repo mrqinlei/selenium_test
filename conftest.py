@@ -14,7 +14,9 @@ from utils.times import timestamp
 from utils.send_mail import send_report
 from selenium.webdriver.chrome.options import Options
 from utils.logger import log
+
 driver = None
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -26,7 +28,8 @@ def drivers(request):
         chrome_options.add_argument('--disable-dev-shm-usage')
         chrome_options.add_argument('--headless')
 
-        driver = webdriver.Chrome(chrome_options=chrome_options)
+        driver = webdriver.Remote("http://localhost:4444/wd/hub",
+                                  webdriver.DesiredCapabilities.CHROME.copy(chrome_options=chrome_options))
 
     def fn():
         driver.quit()
@@ -56,9 +59,8 @@ def pytest_runtest_makereport(item):
                        'onclick="window.open(this.src)" align="right"/></div>' % screen_img
                 extra.append(pytest_html.extras.html(html))
         report.extra = extra
-        log.info('nodeid：%s'%report.nodeid)
-        log.info('运行结果: %s'%report.outcome)
-
+        log.info('nodeid：%s' % report.nodeid)
+        log.info('运行结果: %s' % report.outcome)
 
 
 def pytest_html_results_table_header(cells):
@@ -110,7 +112,6 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     if result['failed'] or result['error']:
         # send_report()
         pass
-
 
 
 def _capture_screenshot():

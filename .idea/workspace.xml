@@ -2,67 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b620311-5259-49fc-b135-a389f123e6a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/UiTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UiTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/categories.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/c71e26503a436098.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3892f324-e669-406d-9439-b1d78a5f141d-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3b365bd2-827c-49b8-bcf7-139a3a09bf01-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/conf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/202112.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222145516.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222153241.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222165004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222165207.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222165717.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222165850.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222165923.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222170006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222170111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222170451.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222170657.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222171050.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222171211.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222171533.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222171620.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222171908.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222174158.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222174624.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222183138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211222191449.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211223102953.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211223111439.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211223111630.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screen_capture/20211223114634.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/out.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640232139041</updated>
       <workItem from="1640232140174" duration="7000" />
-      <workItem from="1640853210293" duration="24337000" />
+      <workItem from="1640853210293" duration="26599000" />
     </task>
     <servers />
   </component>
