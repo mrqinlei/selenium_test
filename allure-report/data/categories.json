@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed.\n  (chrome not reachable)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: '350fae14977b', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.76-linuxkit', java.version: '11.0.13'\nDriver info: driver.version: unknown\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: '350fae14977b', ip: '172.17.0.2', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.76-linuxkit', java.version: '11.0.13'\nDriver info: driver.version: unknown\nStacktrace:\n    at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply (DriverServiceSessionFactory.java:184)\n    at org.openqa.selenium.grid.node.config.DriverServiceSessionFactory.apply (DriverServiceSessionFactory.java:65)\n    at org.openqa.selenium.grid.node.local.SessionSlot.apply (SessionSlot.java:143)\n    at org.openqa.selenium.grid.node.local.LocalNode.newSession (LocalNode.java:314)\n    at org.openqa.selenium.grid.distributor.local.LocalDistributor.startSession (LocalDistributor.java:513)\n    at org.openqa.selenium.grid.distributor.local.LocalDistributor.newSession (LocalDistributor.java:440)\n    at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.handleNewSessionRequest (LocalDistributor.java:648)\n    at org.openqa.selenium.grid.distributor.local.LocalDistributor$NewSessionRunnable.lambda$run$1 (LocalDistributor.java:612)\n    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1128)\n    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:628)\n    at java.lang.Thread.run (Thread.java:829)",
+      "children" : [ {
+        "name" : "test_001",
+        "uid" : "4f9e9fd6aa95b556",
+        "parentUid" : "3b9a9faafd7f950d1960dec8e07a109b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640945242286,
+          "stop" : 1640945242286,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3b9a9faafd7f950d1960dec8e07a109b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

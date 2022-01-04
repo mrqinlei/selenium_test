@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "测试简单云登录模块",
+    "children" : [ {
+      "name" : "点击登录用例",
+      "children" : [ {
+        "name" : "test_001",
+        "uid" : "4f9e9fd6aa95b556",
+        "parentUid" : "0f0bc605f4c0402290131f5ee3f9aae6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1640945242286,
+          "stop" : 1640945242286,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0f0bc605f4c0402290131f5ee3f9aae6"
+    } ],
+    "uid" : "e5f1f9c8bb67a81b24967244cb1137c1"
+  } ],
+  "name" : "behaviors"
+}
