@@ -9,7 +9,7 @@ RUN set -x && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     rm -rf /var/cache/apk/*
 
-#Java
+# Java
 RUN { \
 		echo '#!/bin/sh'; \
 		echo 'set -e'; \
@@ -32,9 +32,8 @@ RUN set -x \
 COPY ./ /UiTest
 RUN pip config set global.index-url https://mirrors.aliyun.com/pypi/simple \
         && pip config set install.trusted-host mirrors.aliyun.com
-RUN pip install pip -U
 RUN pip install -r /UiTest/requirements.txt
 
-ENTRYPOINT ["java","-jar","/UiTest/selenium-server-4.0.0-beta-4.jar","standalone"]
-WORKDIR /UiTest
 EXPOSE 4444
+ENTRYPOINT ["java", "-jar", "/UiTest/selenium-server-4.0.0-beta-4.jar", "standalone"]
+WORKDIR /UiTest
