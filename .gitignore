@@ -1,3 +1,4 @@
 logs/*
 *_temp
 .idea/
+.DS_Store
