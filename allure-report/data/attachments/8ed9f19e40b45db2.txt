@@ -1,0 +1,5 @@
+[32mINFO    [0m page.webpage:webpage.py:33 打开网页：http://ezone-test.work
+[32mINFO    [0m page.webpage:webpage.py:76 点击元素：('class', '_buttonLink_1fhgk_165')
+[32mINFO    [0m page.webpage:webpage.py:69 输入文本：afei
+[32mINFO    [0m page.webpage:webpage.py:69 输入文本：jiandanliangdian123456
+[32mINFO    [0m page.webpage:webpage.py:76 点击元素：('css', 'div._pageRoot_vnh37_51:nth-child(2) div._root_vnh37_1 div.ant-tabs.ant-tabs-top.ant-tabs-centered._tabsRoot_vnh37_37 div.ant-tabs-content-holder div.ant-tabs-content.ant-tabs-content-top div.ant-tabs-tabpane.ant-tabs-tabpane-active:nth-child(1) form.ant-legacy-form.ant-legacy-form-horizontal._form_vnh37_19 div.ant-row.ant-legacy-form-item:nth-child(4) div.ant-col.ant-legacy-form-item-control-wrapper div.ant-legacy-form-item-control span.ant-legacy-form-item-children button.ant-btn.ant-btn-primary.ant-btn-block > span:nth-child(1)')

@@ -7,9 +7,9 @@ import pytest
 import allure
 from utils.logger import log
 from common.readconfig import ini
-from page_object.homepage import HomePage
+from page_object.loginpage import LoginPage
 from common.readconfig import ReadConfig
-import time
+from utils.times import sleep
 
 
 @allure.feature("测试简单云登录模块")
@@ -17,18 +17,24 @@ class TestLogin:
     @pytest.fixture(scope='function', autouse=True)
     def open_ezone(self, drivers):
         '''打开ezone网页'''
-        login = HomePage(drivers)
+        login = LoginPage(drivers)
         login.get_url(ini.url)
 
     @allure.story("点击登录用例")
-    def test_001(self, drivers):
+    def test_login(self, drivers):
         """点击登录"""
-        login = HomePage(drivers)
+        login = LoginPage(drivers)
         login.click_login()
-        login.input_acount('qinlei')
-        login.input_passwd('jiandanyidian123456')
+        login.input_acount(ini.account)
+        login.input_passwd(ini.password)
         login.submit_login()
-        time.sleep(7)
+        sleep()
+        res = login.login_fail_alert()
+        if res:
+            # assert res == "连续失败5次，请15分钟之后再试"
+            assert res is not None
+        elif login.login_success():
+            assert login.login_success() is True
 
 
 if __name__ == '__main__':

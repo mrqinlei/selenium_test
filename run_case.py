@@ -15,7 +15,7 @@ def main():
         # "allure open allure-report"
     ]
     for step in steps:
-        subprocess.run("call " + step if WIN else step, shell=True)
+        subprocess.run("call " + step, shell=True)
 
 
 if __name__ == "__main__":

@@ -6,6 +6,8 @@ from config.conf import cm
 HOST = 'HOST'
 ACCOUNT = 'ACCOUNT'
 PASSWORD = 'PASSWORD'
+internal = "internal"
+test = 'test'
 
 
 class ReadConfig(object):
@@ -27,15 +29,15 @@ class ReadConfig(object):
 
     @property
     def url(self):
-        return self._get(HOST, HOST)
+        return self._get(test, HOST)
 
     @property
     def account(self):
-        return self._get(ACCOUNT,ACCOUNT)
+        return self._get(test,ACCOUNT)
 
     @property
     def password(self):
-        return self._get(PASSWORD,PASSWORD)
+        return self._get(test,PASSWORD)
 
 
 ini = ReadConfig()

@@ -27,13 +27,13 @@ def drivers(request):
         chrome_options = Options()
         chrome_options.add_argument('--window-size=1920,1080')  # 设置窗口界面大小
         chrome_options.add_argument('--disable-dev-shm-usage')
-        chrome_options.add_argument('--headless')
+        # chrome_options.add_argument('--headless')
 
         # driver = webdriver.Remote("http://localhost:4444/wd/hub",
         #                           webdriver.DesiredCapabilities.CHROME.copy(),)
 
         driver = webdriver.Remote(desired_capabilities=DesiredCapabilities().CHROME,
-                                  command_executor='http://127.0.0.1:4444',options=chrome_options)
+                                  command_executor='http://localhost:4444',options=chrome_options)
 
     def fn():
         driver.quit()
