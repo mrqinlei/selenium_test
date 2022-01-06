@@ -32,7 +32,7 @@ class TestProject:
         project.click_enter_workspace()
         project.click_project()
         project.add_project()
-        name, code = 'ui_test'+ str(randint(100,99)), 'ut'+ str(randint(10,99))
+        name, code = 'ui_test'+ str(randint(100,999)), 'ut'+ str(randint(100,999))
         project.add_project_content(name, code)
         project.click_project_template()
         project.select_project_template()
