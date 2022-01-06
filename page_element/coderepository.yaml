@@ -1,0 +1,8 @@
+代码库: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1 div._sideBar_1otbf_5 div.customScrollBar._sideBarMenu_1otbf_39:nth-child(2) div._menuItem_1otbf_55._activeMenu_1otbf_105:nth-child(3) a._menuItemLink_1otbf_67:nth-child(1) div._menuItemText_1otbf_71 div:nth-child(1) span.anticon._iconStyle_1otbf_63 svg:nth-child(1) > use:nth-child(1)"
+新建代码库: "xpath==//span[contains(text(),'新建代码库')]"
+目录名: "xpath==//input[@id='dir']"
+代码库名: "xpath==//input[@id='name']"
+确定: "xpath==//span[contains(text(),'确定')]"
+代码库名检查: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1 div._right_1otbf_146 div._root_ksg4w_1 div._root_1c67r_1 div.ant-breadcrumb._breadcrumb_1c67r_9 span:nth-child(3) span.ant-breadcrumb-link > span._iconBtn_vadur_58.ant-dropdown-trigger"
+
+

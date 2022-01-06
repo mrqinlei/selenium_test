@@ -32,6 +32,11 @@ class LoginPage(WebPage):
         """判断是否登录成功"""
         return self.is_exists(login['进入工作台'])
 
+
+    def click_enter_workspace(self):
+        """点击进入工作台"""
+        self.is_click(login['进入工作台'])
+
     def login_fail_alert(self):
         """登录失败提示"""
         return self.is_exists(login['失败提示'])

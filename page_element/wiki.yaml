@@ -1,0 +1,10 @@
+wiki: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[2]/a[1]/div[1]"
+新建: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div:nth-child(1) div._header_vadur_13._root_12ysu_1 div._rightNode_vadur_39 button.ant-btn.ant-btn-primary > span:nth-child(1)"
+空间名称: "xpath==//input[@id='name']"
+英文标识: "xpath==//input[@id='key']"
+空间描述: "css==#description"
+确定: "css==div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open._fromBox_1n5zl_10 div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body form.ant-form.ant-form-horizontal.ant-form-hide-required-mark._wikiAddFrom_1n5zl_1 div:nth-child(5) button.ant-btn.ant-btn-primary:nth-child(2) > span:nth-child(1)"
+wikiname: "class==_iconBtn_vadur_58 ant-dropdown-trigger"
+全部: "css==#rc-tabs-11-tab-all"
+
+wikibutton: xpath==//span[contains(text(),'123')]
