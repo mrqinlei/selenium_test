@@ -2,21 +2,16 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/1/6 11:22 上午
 # @File    : test_wiki.py
-import tarfile
 from random import randint
-from urllib import request
 
 import pytest
 import allure
 
 from page_object.loginpage import LoginPage
-from page_object.projectpage import project
 from utils.logger import log
 from common.readconfig import ini
 from page_object.wikipage import WikiPage
 from common.readconfig import ReadConfig
-from utils.times import sleep
-import yaml
 
 
 @allure.feature("测试wiki模块")
@@ -41,7 +36,6 @@ class TestWiki:
         wiki.click_wiki()
         wiki.click_create_wiki_space()
         name, code = 'ui_test' + str(randint(100, 999)), 'ut' + str(randint(100, 999))
-        print(name,code+'==================')
         wiki.add_wiki_content(name, code)
         wiki.click_confirm()
         # fr = open('../page_element/wiki.yaml', 'a')
