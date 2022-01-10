@@ -30,3 +30,4 @@ class TestManage(WebPage):
     def check_create_success(self):
         """检查创建成功"""
         return self.is_exists(testmanage['全部'])
+

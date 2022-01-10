@@ -41,6 +41,11 @@ class TestWiki:
         assert testmange.check_create_success() is not None
 
 
+    def test_create_card(self,drivers):
+        """创建卡片"""
+
+
+
 
 if __name__ == '__main__':
     pytest.main(['TestCase/test_manage.py'])

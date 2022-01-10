@@ -11,6 +11,7 @@ login = Element('login')
 
 class ProjectPage(WebPage):
     """project类"""
+
     def click_enter_workspace(self):
         """点击进入工作台"""
         self.is_click(login['进入工作台'])
@@ -44,11 +45,47 @@ class ProjectPage(WebPage):
         """点击确定创建按钮"""
         self.is_click(project['新建项目确定'])
 
-    def check_create_result(self):
-        """查看创建项目结果"""
-        return self.element_text(project['项目名称列表'])
-
     def personal_settings_name(self):
         """创建成功后跳转个人设置，查看个人设置项目名称"""
         return self.element_text(project['个人设置项目名称'])
 
+    def click_project_plan(self):
+        """点击项目名称跳转"""
+        self.is_click(project['产品规划'])
+
+    def click_new_plan(self):
+        """点击新增规划"""
+        self.is_click(project['新建规划'])
+
+    def add_plan_name(self, planname):
+        """输入计划名称"""
+        self.input_text(project['规划名称'], planname)
+
+    def click_confirm_create_plan(self):
+        """点击确定创建计划"""
+        self.is_click(project['规划确定'])
+
+    def check_create_plan_success(self):
+        """检查创建计划成功"""
+        self.is_exists(project['创建成功'])
+
+    def click_plan_and_board(self):
+        """点击计划与看板"""
+        self.is_click(project['计划与看板'])
+
+    def click_create_card(self):
+        """点击创建卡片"""
+        self.is_click(project['新建卡片'])
+
+    def add_card_title(self, title, content):
+        """输入卡片标题"""
+        self.input_text(project['卡片标题'], title)
+        self.input_text(project['卡片内容'], content)
+
+    def click_confirm_create_card(self):
+        """点击确定创建卡片"""
+        self.is_click(project['卡片确定'])
+
+    def check_card_create_success(self):
+        """检查卡片创建成功"""
+        return self.is_exists(project['卡片title'])
