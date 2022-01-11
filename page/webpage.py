@@ -4,6 +4,7 @@
 selenium基类
 本文件存放了selenium基类的封装方法
 """
+from selenium.webdriver import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -68,6 +69,17 @@ class WebPage(object):
         ele.send_keys(txt)
         log.info("输入文本：{}".format(txt))
 
+    def input_text_withoutclear(self,locator,txt):
+        """输入（输入前不清空）"""
+        sleep(0.5)
+        ele = self.find_element(locator)
+        ele.send_keys(txt)
+        log.info("输入文本:{}".format(txt))
+
+    def press_enter(self):
+        self.send_keys(Keys.ENTER)
+
+
     def is_click(self, locator):
         """点击"""
         ele = self.find_element(locator)
@@ -115,6 +127,9 @@ class WebPage(object):
         """刷新页面F5"""
         self.driver.refresh()
         self.driver.implicitly_wait(30)
+
+    def send_keys(self, ENTER):
+        pass
 
 
 if __name__ == "__main__":

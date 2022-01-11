@@ -6,3 +6,20 @@ wiki: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/di
 确定: "css==div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open._fromBox_1n5zl_10 div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body form.ant-form.ant-form-horizontal.ant-form-hide-required-mark._wikiAddFrom_1n5zl_1 div:nth-child(5) button.ant-btn.ant-btn-primary:nth-child(2) > span:nth-child(1)"
 wikiname: "class==_iconBtn_vadur_58 ant-dropdown-trigger"
 全部: "css==#rc-tabs-11-tab-all"
+第一个页面: "xpath==//tbody/tr[1]/td[1]/a[1]/span[1]"
+页面列表: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[2]/a[2]/div[1]/span[1]"
+新建页面: "xpath==//span[contains(text(),'新建页面')]"
+输入标题: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]"
+输入内容: "class==ProseMirror"
+加粗: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[1]"
+斜体: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[2]"
+删除线: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[3]"
+高亮: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[4]"
+行内代码: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[6]"
+链接: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[7]"
+输入链接: "css==body:nth-child(2) div:nth-child(7) div.sc-gsTEea.esJyFI div.sc-bdfBQB.sc-fubCzh.dpzfFo.ejlNuV > input.sc-dlfnuX.dkWWzr:nth-child(1)"
+发布: "xpath==/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]/span[1]"
+检查title: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._root_ksg4w_1 div._root_1c67r_1 div.ant-breadcrumb._breadcrumb_1c67r_9 span:nth-child(4) span.ant-breadcrumb-link div._pageTitle_1kinv_1 > span._autoTooltipBox_vadur_224"
+
+
+

@@ -6,6 +6,7 @@ from random import randint
 
 import pytest
 import allure
+from selenium.webdriver import Keys
 
 from page_object.loginpage import LoginPage
 from utils.logger import log
@@ -47,6 +48,38 @@ class TestWiki:
         # print(res)
         assert wiki.all_button_exists() is not None
 
+    @allure.feature("wiki新建页面")
+    def test_create_new_page(self,drivers):
+        """新建页面"""
+        wiki = WikiPage(drivers)
+        wiki.click_first_wiki_space()
+        wiki.click_page_list()
+        wiki.click_new_page()
+        title = "ui自动化测试"
+        wiki.add_page_title(title)
+        content = "ui自动化测试123"
+        wiki.add_page_content(content)
+        wiki.input_font_bold()
+        wiki.add_to_page_content(content)
+        wiki.click_enter()
+        wiki.input_font_itali()
+        wiki.add_to_page_content(content)
+        wiki.click_enter()
+        wiki.input_del_font()
+        wiki.add_to_page_content(content)
+        wiki.click_enter()
+        wiki.input_highlight_font()
+        wiki.add_to_page_content(content)
+        wiki.click_enter()
+        wiki.input_incode()
+        wiki.add_to_page_content(content)
+        wiki.click_enter()
+        wiki.click_input_link()
+        link = "https://baiudu/com"
+        wiki.input_link(link)
+        wiki.click_enter()
+        wiki.click_publish_button()
+        assert wiki.check_title() == title
 
 
 if __name__ == '__main__':
