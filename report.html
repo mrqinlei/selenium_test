@@ -429,7 +429,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>pytest示例项目测试报告</h1>
-    <p>Report generated on 05-Jan-2022 at 19:26:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 12-Jan-2022 at 19:50:45 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -441,8 +441,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
     <h2>Summary</h2>
     <p>所属部门: XX公司测试部</p>
     <p>测试执行人: xx</p>
-    <p>2 tests ran in 40.23 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>8 tests ran in 147.54 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">7 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -454,12 +454,57 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="5">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td>新建页面</td>
+          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_create_new_page</td>
+          <td class="col-duration">41.64</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="log">self = &lt;TestCase.test_wiki.TestWiki object at 0x7fca382f46d0&gt;, drivers = &lt;selenium.webdriver.remote.webdriver.WebDriver (session=&quot;e4aae025750afa0c7124dd23a451b635&quot;)&gt;<br/><br/>    @allure.feature(&quot;wiki新建页面&quot;)<br/>    def test_create_new_page(self,drivers):<br/>        &quot;&quot;&quot;新建页面&quot;&quot;&quot;<br/>        wiki = WikiPage(drivers)<br/>        wiki.click_first_wiki_space()<br/>        wiki.click_page_list()<br/>        sleep(3)<br/>        wiki.click_new_page()<br/>        title = &quot;ui自动化测试&quot;<br/>        wiki.add_page_title(title)<br/>        content = &quot;ui自动化测试123&quot;<br/>        wiki.add_page_content(content)<br/>        wiki.input_font_bold()<br/>        wiki.add_to_page_content(content)<br/>        wiki.click_enter()<br/>        wiki.input_font_itali()<br/>        wiki.add_to_page_content(content)<br/>        wiki.click_enter()<br/>        wiki.input_del_font()<br/>        wiki.add_to_page_content(content)<br/>        wiki.click_enter()<br/>        wiki.input_highlight_font()<br/>        wiki.add_to_page_content(content)<br/>        wiki.click_enter()<br/>        wiki.input_incode()<br/>        wiki.add_to_page_content(content)<br/>        wiki.click_enter()<br/>        wiki.click_input_link()<br/>        link = &quot;https://baiudu/com&quot;<br/>&gt;       wiki.input_link(link)<br/><br/>TestCase/test_wiki.py:81: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>page_object/wikipage.py:91: in input_link<br/>    self.input_text(wiki[&#x27;输入链接&#x27;], link)<br/>page/webpage.py:67: in input_text<br/>    ele = self.find_element(locator)<br/>page/webpage.py:47: in find_element<br/>    EC.presence_of_element_located(args)), locator)<br/>page/webpage.py:42: in element_locator<br/>    return func(cm.LOCATE_MODE[name], value)<br/>page/webpage.py:47: in &lt;lambda&gt;<br/>    EC.presence_of_element_located(args)), locator)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.support.wait.WebDriverWait (session=&quot;e4aae025750afa0c7124dd23a451b635&quot;)&gt;<br/>method = &lt;function presence_of_element_located.&lt;locals&gt;._predicate at 0x7fca382ebe60&gt;, message = &#x27;&#x27;<br/><br/>    def until(self, method, message=&#x27;&#x27;):<br/>        &quot;&quot;&quot;Calls the method provided with the driver as an argument until the \<br/>        return value does not evaluate to ``False``.<br/>    <br/>        :param method: callable(WebDriver)<br/>        :param message: optional message for :exc:`TimeoutException`<br/>        :returns: the result of the last call to `method`<br/>        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs<br/>        &quot;&quot;&quot;<br/>        screen = None<br/>        stacktrace = None<br/>    <br/>        end_time = time.time() + self._timeout<br/>        while True:<br/>            try:<br/>                value = method(self._driver)<br/>                if value:<br/>                    return value<br/>            except InvalidSelectorException as e:<br/>                raise e<br/>            except self._ignored_exceptions as exc:<br/>                screen = getattr(exc, &#x27;screen&#x27;, None)<br/>                stacktrace = getattr(exc, &#x27;stacktrace&#x27;, None)<br/>            time.sleep(self._poll)<br/>            if time.time() &gt; end_time:<br/>                break<br/>&gt;       raise TimeoutException(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.TimeoutException: Message: </span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       0   chromedriver                        0x0000000104e89408 __gxx_personality_v0 + 543364</span><br/><span class="error">E       1   chromedriver                        0x0000000104e1f138 __gxx_personality_v0 + 108468</span><br/><span class="error">E       2   chromedriver                        0x0000000104a1e7d8 chromedriver + 157656</span><br/><span class="error">E       3   chromedriver                        0x0000000104a4e374 chromedriver + 353140</span><br/><span class="error">E       4   chromedriver                        0x0000000104a777d4 chromedriver + 522196</span><br/><span class="error">E       5   chromedriver                        0x0000000104a43238 chromedriver + 307768</span><br/><span class="error">E       6   chromedriver                        0x0000000104e4cc7c __gxx_personality_v0 + 295672</span><br/><span class="error">E       7   chromedriver                        0x0000000104e60bd8 __gxx_personality_v0 + 377428</span><br/><span class="error">E       8   chromedriver                        0x0000000104e652b0 __gxx_personality_v0 + 395564</span><br/><span class="error">E       9   chromedriver                        0x0000000104e619f8 __gxx_personality_v0 + 381044</span><br/><span class="error">E       10  chromedriver                        0x0000000104e42754 __gxx_personality_v0 + 253392</span><br/><span class="error">E       11  chromedriver                        0x0000000104e7aa38 __gxx_personality_v0 + 483508</span><br/><span class="error">E       12  chromedriver                        0x0000000104e7abac __gxx_personality_v0 + 483880</span><br/><span class="error">E       13  chromedriver                        0x0000000104e8ffec __gxx_personality_v0 + 570984</span><br/><span class="error">E       14  libsystem_pthread.dylib             0x000000018aace06c _pthread_start + 320</span><br/><span class="error">E       15  libsystem_pthread.dylib             0x000000018aac8da0 thread_start + 8</span><br/><br/>/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/support/wait.py:89: TimeoutException<br/> ------------------------------Captured stderr call------------------------------ <br/>Wed, 12 Jan 2022 19:50:03-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_wiki.py::TestWiki::test_create_new_page
+Wed, 12 Jan 2022 19:50:03-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
+Wed, 12 Jan 2022 19:50:05-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &#x27;//tbody/tr[1]/td[1]/a[1]/span[1]&#x27;)
+Wed, 12 Jan 2022 19:50:06-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[1]/div[1]/div[2]/a[2]/div[1]/span[1]&quot;)
+Wed, 12 Jan 2022 19:50:10-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &#x27;/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/button[1]/span[1]&#x27;)
+Wed, 12 Jan 2022 19:50:11-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui自动化测试
+Wed, 12 Jan 2022 19:50:12-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui自动化测试123
+Wed, 12 Jan 2022 19:50:13-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[1]&quot;)
+Wed, 12 Jan 2022 19:50:14-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:15-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[2]&quot;)
+Wed, 12 Jan 2022 19:50:16-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:17-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[3]&quot;)
+Wed, 12 Jan 2022 19:50:17-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:18-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[4]&quot;)
+Wed, 12 Jan 2022 19:50:19-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:20-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[6]&quot;)
+Wed, 12 Jan 2022 19:50:21-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:22-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[7]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &#x27;//tbody/tr[1]/td[1]/a[1]/span[1]&#x27;)
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[1]/div[1]/div[2]/a[2]/div[1]/span[1]&quot;)
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &#x27;/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/button[1]/span[1]&#x27;)
+INFO     page.webpage:webpage.py:70 输入文本：ui自动化测试
+INFO     page.webpage:webpage.py:70 输入文本：ui自动化测试123
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[1]&quot;)
+INFO     page.webpage:webpage.py:77 输入文本:ui自动化测试123
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[2]&quot;)
+INFO     page.webpage:webpage.py:77 输入文本:ui自动化测试123
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[3]&quot;)
+INFO     page.webpage:webpage.py:77 输入文本:ui自动化测试123
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[4]&quot;)
+INFO     page.webpage:webpage.py:77 输入文本:ui自动化测试123
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[6]&quot;)
+INFO     page.webpage:webpage.py:77 输入文本:ui自动化测试123
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[7]&quot;)<br/> ----------------------------Captured stderr teardown---------------------------- <br/>Wed, 12 Jan 2022 19:50:44-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_wiki.py::TestWiki::test_create_new_page
+Wed, 12 Jan 2022 19:50:44-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: failed
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td>点击登录</td>
           <td class="col-name">TestCase/test_login.py::TestLogin::test_login</td>
-          <td class="col-duration">27.97</td>
+          <td class="col-duration">42.20</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">
@@ -467,9 +512,59 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td>新建项目</td>
+          <td>新建代码库测试</td>
+          <td class="col-name">TestCase/test_coderepository.py::TestcodeRepository::test_create_wiki_space</td>
+          <td class="col-duration">5.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>新建项目测试</td>
           <td class="col-name">TestCase/test_project.py::TestProject::test_create_project</td>
-          <td class="col-duration">12.15</td>
+          <td class="col-duration">7.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>新建卡片用例</td>
+          <td class="col-name">TestCase/test_project.py::TestProject::test_create_card</td>
+          <td class="col-duration">16.96</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>新建规划</td>
+          <td class="col-name">TestCase/test_project.py::TestProject::test_create_plan</td>
+          <td class="col-duration">4.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>创建测试管理空间</td>
+          <td class="col-name">TestCase/test_testmanage.py::TestWiki::test_create_manage</td>
+          <td class="col-duration">14.77</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td>新建wiki空间测试</td>
+          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_create_wiki_space</td>
+          <td class="col-duration">14.77</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">

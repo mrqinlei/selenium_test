@@ -1,0 +1,10 @@
+Wed, 12 Jan 2022 19:49:00-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_coderepository.py::TestcodeRepository::test_create_wiki_space
+Wed, 12 Jan 2022 19:49:00-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
+Wed, 12 Jan 2022 19:49:01-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1 div._sideBar_1otbf_5 div.customScrollBar._sideBarMenu_1otbf_39:nth-child(2) div._menuItem_1otbf_55._activeMenu_1otbf_105:nth-child(3) a._menuItemLink_1otbf_67:nth-child(1) div._menuItemText_1otbf_71 div:nth-child(1) span.anticon._iconStyle_1otbf_63 svg:nth-child(1) > use:nth-child(1)')
+Wed, 12 Jan 2022 19:49:02-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//span[contains(text(),'新建代码库')]")
+Wed, 12 Jan 2022 19:49:03-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui_test131
+Wed, 12 Jan 2022 19:49:04-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ut730
+Wed, 12 Jan 2022 19:49:05-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//span[contains(text(),'确定')]")
+Wed, 12 Jan 2022 19:49:05-page.webpage-webpage.py-[line:112]-INFO-[日志信息]: 获取文本：ut730
+Wed, 12 Jan 2022 19:49:05-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_coderepository.py::TestcodeRepository::test_create_wiki_space
+Wed, 12 Jan 2022 19:49:05-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed

@@ -1,0 +1,9 @@
+[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._sideBar_1otbf_5 div.customScrollBar._sideBarMenu_1otbf_39:nth-child(2) div._menuItem_1otbf_55:nth-child(1) a._menuItemLink_1otbf_67 > div._menuItemText_1otbf_71')
+[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1 div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div._root_ebk8i_1 div._header_vadur_13._root_64yqk_1 div._leftNode_vadur_44 div._root_2nqb3_1._operations_64yqk_1 div._filter_2nqb3_5 button.ant-btn.ant-btn-primary > span:nth-child(1)')
+[32mINFO    [0m page.webpage:webpage.py:70 输入文本：ui_test135
+[32mINFO    [0m page.webpage:webpage.py:70 输入文本：ut845
+[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('class', 'ant-select-selection-search-input')
+[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('class', '_searchInputOption_vadur_233')
+[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body div._root_1o3om_1 form.ant-form.ant-form-horizontal.ant-form-hide-required-mark div:nth-child(8) button.ant-btn.ant-btn-primary:nth-child(2) > span:nth-child(1)')
+[32mINFO    [0m page.webpage:webpage.py:112 获取文本：ui_test135
+[32mINFO    [0m utils.logger:test_project.py:46 ui_test135

@@ -1,0 +1,9 @@
+Wed, 12 Jan 2022 19:49:34-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_testmanage.py::TestWiki::test_create_manage
+Wed, 12 Jan 2022 19:49:34-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
+Wed, 12 Jan 2022 19:49:35-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[8]/a[1]/div[1]")
+Wed, 12 Jan 2022 19:49:36-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div:nth-child(1) div._header_vadur_13._root_12ysu_1 div._rightNode_vadur_39 > button.ant-btn.ant-btn-primary')
+Wed, 12 Jan 2022 19:49:37-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui_test426
+Wed, 12 Jan 2022 19:49:38-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ut863
+Wed, 12 Jan 2022 19:49:39-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//span[contains(text(),'确 定')]")
+Wed, 12 Jan 2022 19:49:49-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_testmanage.py::TestWiki::test_create_manage
+Wed, 12 Jan 2022 19:49:49-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed

@@ -13,6 +13,7 @@ from utils.logger import log
 from common.readconfig import ini
 from page_object.wikipage import WikiPage
 from common.readconfig import ReadConfig
+from utils.times import sleep
 
 
 @allure.feature("测试wiki模块")
@@ -54,6 +55,7 @@ class TestWiki:
         wiki = WikiPage(drivers)
         wiki.click_first_wiki_space()
         wiki.click_page_list()
+        sleep(3)
         wiki.click_new_page()
         title = "ui自动化测试"
         wiki.add_page_title(title)
@@ -73,9 +75,11 @@ class TestWiki:
         wiki.click_enter()
         wiki.input_incode()
         wiki.add_to_page_content(content)
+        sleep(1)
         wiki.click_enter()
         wiki.click_input_link()
         link = "https://baiudu/com"
+        sleep(1)
         wiki.input_link(link)
         wiki.click_enter()
         wiki.click_publish_button()

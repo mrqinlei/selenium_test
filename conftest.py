@@ -33,7 +33,7 @@ def drivers(request):
         #                           webdriver.DesiredCapabilities.CHROME.copy(),)
 
         driver = webdriver.Remote(desired_capabilities=DesiredCapabilities().CHROME,
-                                  command_executor='http://localhost:4444',options=chrome_options)
+                                  command_executor='http://localhost:4444', options=chrome_options)
 
     def fn():
         driver.quit()
@@ -128,3 +128,25 @@ def _capture_screenshot():
     # with open(screen_file, 'rb') as f:
     #     imagebase64 = base64.b64encode(f.read())
     # return imagebase64.decode()
+
+
+def pytest_collection_modifyitems(session, items):
+    # 期望用例顺序
+    appoint_items = ["test_login", "test_project","test_wiki","test_coderepository","test_testmanage"]
+
+    # 指定运行顺序
+    run_items = []
+    for i in appoint_items:
+        for item in items:
+            module_item = item.name.split("[")[0]
+            if i == module_item:
+                run_items.append(item)
+
+    for i in run_items:
+        run_index = run_items.index(i)
+        items_index = items.index(i)
+
+        if run_index != items_index:
+            n_data = items[run_index]
+            run_index = items.index(n_data)
+            items[items_index], items[run_index] = items[run_index], items[items_index]

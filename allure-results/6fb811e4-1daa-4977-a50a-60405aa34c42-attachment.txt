@@ -1,0 +1,20 @@
+Wed, 12 Jan 2022 19:50:03-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_wiki.py::TestWiki::test_create_new_page
+Wed, 12 Jan 2022 19:50:03-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
+Wed, 12 Jan 2022 19:50:05-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', '//tbody/tr[1]/td[1]/a[1]/span[1]')
+Wed, 12 Jan 2022 19:50:06-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[2]/a[2]/div[1]/span[1]")
+Wed, 12 Jan 2022 19:50:10-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', '/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]/button[1]/span[1]')
+Wed, 12 Jan 2022 19:50:11-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui自动化测试
+Wed, 12 Jan 2022 19:50:12-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui自动化测试123
+Wed, 12 Jan 2022 19:50:13-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[1]")
+Wed, 12 Jan 2022 19:50:14-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:15-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[2]")
+Wed, 12 Jan 2022 19:50:16-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:17-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[3]")
+Wed, 12 Jan 2022 19:50:17-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:18-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[4]")
+Wed, 12 Jan 2022 19:50:19-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:20-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[6]")
+Wed, 12 Jan 2022 19:50:21-page.webpage-webpage.py-[line:77]-INFO-[日志信息]: 输入文本:ui自动化测试123
+Wed, 12 Jan 2022 19:50:22-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[7]")
+Wed, 12 Jan 2022 19:50:44-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_wiki.py::TestWiki::test_create_new_page
+Wed, 12 Jan 2022 19:50:44-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: failed
