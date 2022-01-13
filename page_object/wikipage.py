@@ -102,3 +102,26 @@ class WikiPage(WebPage):
         """"检查发布后的title"""
         return self.element_text(wiki['检查title'])
 
+    def click_star_button(self):
+        """点击收藏页面按钮"""
+        self.is_click(wiki['收藏按钮'])
+
+    def get_star_button_text(self):
+        """获取收藏按钮文案判断已收藏未收藏"""
+        return self.element_text(wiki['收藏按钮'])
+
+    def click_focus_button(self):
+        """点击关注按钮"""
+        self.is_click(wiki['关注按钮'])
+
+    def get_focus_button_text(self):
+        """获取关注按钮文案判断已关注或未关注"""
+        return self.element_text(wiki['关注按钮'])
+
+    def click_to_star_page(self):
+        """点击跳转收藏页面"""
+        self.is_click(wiki['我的收藏'])
+
+    def get_star_title(self):
+        """获取收藏标题"""
+        return self.element_text(wiki['收藏名称'])

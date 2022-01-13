@@ -1,5 +1,5 @@
 wiki: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[2]/a[1]/div[1]"
-新建: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div:nth-child(1) div._header_vadur_13._root_12ysu_1 div._rightNode_vadur_39 button.ant-btn.ant-btn-primary > span:nth-child(1)"
+新建: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]"
 空间名称: "xpath==//input[@id='name']"
 英文标识: "xpath==//input[@id='key']"
 空间描述: "css==#description"
@@ -19,7 +19,10 @@ wikiname: "class==_iconBtn_vadur_58 ant-dropdown-trigger"
 链接: "xpath==//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[7]"
 输入链接: "css==body:nth-child(2) div:nth-child(7) div.sc-gsTEea.esJyFI div.sc-bdfBQB.sc-fubCzh.dpzfFo.ejlNuV > input.sc-dlfnuX.dkWWzr:nth-child(1)"
 发布: "xpath==/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/button[1]/span[1]"
-检查title: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._root_ksg4w_1 div._root_1c67r_1 div.ant-breadcrumb._breadcrumb_1c67r_9 span:nth-child(4) span.ant-breadcrumb-link div._pageTitle_1kinv_1 > span._autoTooltipBox_vadur_224"
-
+检查title: "xpath==/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/b[1]"
+收藏按钮: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div._wrapper_qf7kx_1 div._right_qf7kx_29 div._content_qf7kx_52 div._title_qf7kx_58 dl._opts_qf7kx_78:nth-child(1) dd:nth-child(2) > span:nth-child(2)"
+关注按钮: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div._wrapper_qf7kx_1 div._right_qf7kx_29 div._content_qf7kx_52 div._title_qf7kx_58 dl._opts_qf7kx_78:nth-child(1) dd:nth-child(3) > span:nth-child(2)"
+我的收藏: "xpath==/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/a[4]/div[1]"
+收藏名称: "css==div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div._wrapper_fmhzj_1 div._pageList_fmhzj_53._rootPage_fmhzj_89 div._item_fmhzj_62 div._title_fmhzj_65 a._link_fmhzj_71 > span._autoTooltipBox_17qqg_224"
 
 

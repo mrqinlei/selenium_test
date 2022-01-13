@@ -85,6 +85,31 @@ class TestWiki:
         wiki.click_publish_button()
         assert wiki.check_title() == title
 
+    @allure.feature('收藏按钮')
+    def test_star_button(self,drivers):
+        """收藏按钮测试"""
+        wiki = WikiPage(drivers)
+        wiki.click_star_button()
+        sleep()
+        star_status = wiki.get_star_button_text()
+        assert star_status == '取消收藏'
+
+    @allure.feature('关注按钮')
+    def test_focus_button(self,drivers):
+        """关注按钮测试"""
+        wiki = WikiPage(drivers)
+        wiki.click_focus_button()
+        focus_status = wiki.get_focus_button_text()
+        assert focus_status == "取消关注"
+
+    @allure.feature('收藏页面')
+    def test_star_page(self,drivers):
+        """收藏页面测试"""
+        wiki = WikiPage(drivers)
+        wiki.click_to_star_page()
+        star_page_title = wiki.get_star_title()
+        assert star_page_title == "ui自动化测试"
+
 
 if __name__ == '__main__':
     pytest.main(['TestCase/test_wiki.py'])
