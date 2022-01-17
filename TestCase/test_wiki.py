@@ -19,17 +19,17 @@ from utils.times import sleep
 @allure.feature("测试wiki模块")
 class TestWiki:
 
-    @pytest.fixture(scope='class', autouse=True)
-    def is_login(self, drivers):
-        """点击登录"""
-        login = LoginPage(drivers)
-        login.get_url(ini.url)
-        login = LoginPage(drivers)
-        login.click_login()
-        login.input_acount(ini.account)
-        login.input_passwd(ini.password)
-        login.submit_login()
-        login.click_enter_workspace()
+    # @pytest.fixture(scope='class', autouse=True)
+    # def is_login(self, drivers):
+    #     """点击登录"""
+    #     login = LoginPage(drivers)
+    #     login.get_url(ini.url)
+    #     login = LoginPage(drivers)
+    #     login.click_login()
+    #     login.input_acount(ini.account)
+    #     login.input_passwd(ini.password)
+    #     login.submit_login()
+    #     login.click_enter_workspace()
 
     @allure.feature("新建wiki用例")
     def test_create_wiki_space(self, drivers):

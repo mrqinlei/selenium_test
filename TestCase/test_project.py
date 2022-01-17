@@ -68,6 +68,17 @@ class TestProject:
         project.click_confirm_create_plan()
         assert project.check_create_plan_success is not None
 
+    @allure.feature("项目收藏用例")
+    def test_project_star(self,drivers):
+        """收藏功能"""
+        project = ProjectPage(drivers)
+        project.click_project()
+        before_star_name = project.get_first_project_name()
+        project.click_star_button()
+        project.click_my_star()
+        after_star_name = project.get_first_project_name()
+        print(before_star_name,after_star_name)
+        assert before_star_name == after_star_name
 
 
 

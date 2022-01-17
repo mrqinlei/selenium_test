@@ -89,3 +89,15 @@ class ProjectPage(WebPage):
     def check_card_create_success(self):
         """检查卡片创建成功"""
         return self.is_exists(project['卡片title'])
+
+    def get_first_project_name(self):
+        """获得第一个项目的名称"""
+        return self.element_text(project['获得项目名称'])
+
+    def click_star_button(self):
+        """点击收藏按钮"""
+        self.is_click(project['收藏按钮'])
+
+    def click_my_star(self):
+        """点击我的收藏"""
+        self.is_click(project['我的收藏'])
