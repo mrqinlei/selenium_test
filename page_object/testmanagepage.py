@@ -31,3 +31,43 @@ class TestManage(WebPage):
         """检查创建成功"""
         return self.is_exists(testmanage['全部'])
 
+    def click_new_case(self):
+        """点击创建用例"""
+        self.is_click(testmanage['新建用例'])
+
+    def input_case_name(self,case_name):
+        """输入用例名称"""
+        self.input_text(testmanage['用例名称'],case_name)
+
+
+    def click_charge_man(self):
+        """点击负责人"""
+        self.is_click(testmanage['负责人'])
+
+    def select_charge_man(self):
+        """选择负责人"""
+        self.is_click(testmanage['选择负责人'])
+
+    def click_create_new_step(self):
+        """点击新增步骤"""
+        self.is_click(testmanage['新增步骤'])
+
+    def input_step(self,step):
+        """输入步骤"""
+        self.input_text(testmanage['步骤1'],step)
+
+    def input_except(self,except_result):
+        """输入预期结果"""
+        self.input_text(testmanage['预期1'],except_result)
+
+    def click_create_case_confirm(self):
+        """点击确定创建"""
+        self.is_click(testmanage['确定创建用例'])
+
+    def click_first_case(self):
+        """点击空间第一条用例"""
+        self.is_click(testmanage['第一条用例'])
+
+    def get_case_name(self):
+        """获得第一条用例名称"""
+        return self.get_attribute(testmanage['用例名称'])
