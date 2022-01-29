@@ -429,20 +429,20 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>pytest示例项目测试报告</h1>
-    <p>Report generated on 13-Jan-2022 at 16:40:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 29-Jan-2022 at 17:35:45 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>测试地址</td>
-        <td><a href="http://ezone-test.work" target="_blank">http://ezone-test.work</a></td></tr>
+        <td><a href="http://hhh.ezone-test.work" target="_blank">http://hhh.ezone-test.work</a></td></tr>
       <tr>
         <td>测试项目</td>
         <td>简单云测试</td></tr></table>
     <h2>Summary</h2>
     <p>所属部门: XX公司测试部</p>
     <p>测试执行人: xx</p>
-    <p>5 tests ran in 71.30 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 66.01 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -454,52 +454,37 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="5">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td>新建wiki空间测试</td>
-          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_create_wiki_space</td>
-          <td class="col-duration">36.11</td>
+          <td class="col-result">Failed</td>
+          <td>创建接口</td>
+          <td class="col-name">TestCase/test_testmanage.py::TestTestManage::test_create_interface</td>
+          <td class="col-duration">28.67</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
+            <div class="log">self = &lt;TestCase.test_testmanage.TestTestManage object at 0x7faaf0f29650&gt;<br/>drivers = &lt;selenium.webdriver.remote.webdriver.WebDriver (session=&quot;5adb3aa758370db1193ad34ca73b52e6&quot;)&gt;<br/><br/>    def test_create_interface(self,drivers):<br/>        &quot;&quot;&quot;创建接口&quot;&quot;&quot;<br/>        testmange = TestManage(drivers)<br/>        testmange.click_first_test_space()  #如果创建用例被注释则打开<br/>        testmange.click_interface_manage()<br/>        testmange.click_create_interface()<br/>        interface_name = &quot;ui自动化测试输入接口&quot;<br/>        testmange.input_interface_name(interface_name)<br/>        url = &quot;test/api/v1&quot;<br/>        testmange.input_url(url)<br/>        testmange.click_member()<br/>&gt;       testmange.select_member()  # 选择负责人待优化<br/><br/>test_testmanage.py:71: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>../page_object/testmanagepage.py:105: in select_member<br/>    self.is_click(testmanage[&#x27;选择成员&#x27;])<br/>../page/webpage.py:85: in is_click<br/>    ele = self.find_element(locator)<br/>../page/webpage.py:47: in find_element<br/>    EC.presence_of_element_located(args)), locator)<br/>../page/webpage.py:42: in element_locator<br/>    return func(cm.LOCATE_MODE[name], value)<br/>../page/webpage.py:47: in &lt;lambda&gt;<br/>    EC.presence_of_element_located(args)), locator)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.support.wait.WebDriverWait (session=&quot;5adb3aa758370db1193ad34ca73b52e6&quot;)&gt;<br/>method = &lt;function presence_of_element_located.&lt;locals&gt;._predicate at 0x7faaf0f20f80&gt;<br/>message = &#x27;&#x27;<br/><br/>    def until(self, method, message=&#x27;&#x27;):<br/>        &quot;&quot;&quot;Calls the method provided with the driver as an argument until the \<br/>        return value does not evaluate to ``False``.<br/>    <br/>        :param method: callable(WebDriver)<br/>        :param message: optional message for :exc:`TimeoutException`<br/>        :returns: the result of the last call to `method`<br/>        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs<br/>        &quot;&quot;&quot;<br/>        screen = None<br/>        stacktrace = None<br/>    <br/>        end_time = time.time() + self._timeout<br/>        while True:<br/>            try:<br/>                value = method(self._driver)<br/>                if value:<br/>                    return value<br/>            except InvalidSelectorException as e:<br/>                raise e<br/>            except self._ignored_exceptions as exc:<br/>                screen = getattr(exc, &#x27;screen&#x27;, None)<br/>                stacktrace = getattr(exc, &#x27;stacktrace&#x27;, None)<br/>            time.sleep(self._poll)<br/>            if time.time() &gt; end_time:<br/>                break<br/>&gt;       raise TimeoutException(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.TimeoutException: Message: </span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       0   chromedriver                        0x0000000104ff1408 __gxx_personality_v0 + 543364</span><br/><span class="error">E       1   chromedriver                        0x0000000104f87138 __gxx_personality_v0 + 108468</span><br/><span class="error">E       2   chromedriver                        0x0000000104b867d8 chromedriver + 157656</span><br/><span class="error">E       3   chromedriver                        0x0000000104bb6374 chromedriver + 353140</span><br/><span class="error">E       4   chromedriver                        0x0000000104bdf7d4 chromedriver + 522196</span><br/><span class="error">E       5   chromedriver                        0x0000000104bab238 chromedriver + 307768</span><br/><span class="error">E       6   chromedriver                        0x0000000104fb4c7c __gxx_personality_v0 + 295672</span><br/><span class="error">E       7   chromedriver                        0x0000000104fc8bd8 __gxx_personality_v0 + 377428</span><br/><span class="error">E       8   chromedriver                        0x0000000104fcd2b0 __gxx_personality_v0 + 395564</span><br/><span class="error">E       9   chromedriver                        0x0000000104fc99f8 __gxx_personality_v0 + 381044</span><br/><span class="error">E       10  chromedriver                        0x0000000104faa754 __gxx_personality_v0 + 253392</span><br/><span class="error">E       11  chromedriver                        0x0000000104fe2a38 __gxx_personality_v0 + 483508</span><br/><span class="error">E       12  chromedriver                        0x0000000104fe2bac __gxx_personality_v0 + 483880</span><br/><span class="error">E       13  chromedriver                        0x0000000104ff7fec __gxx_personality_v0 + 570984</span><br/><span class="error">E       14  libsystem_pthread.dylib             0x000000018aace06c _pthread_start + 320</span><br/><span class="error">E       15  libsystem_pthread.dylib             0x000000018aac8da0 thread_start + 8</span><br/><br/>/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver/support/wait.py:89: TimeoutException<br/> ------------------------------Captured stderr call------------------------------ <br/>Sat, 29 Jan 2022 17:35:16-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_testmanage.py::TestTestManage::test_create_interface
+Sat, 29 Jan 2022 17:35:16-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
+Sat, 29 Jan 2022 17:35:17-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;css&#x27;, &#x27;div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div.ant-table-wrapper.ant-table-middle div.ant-spin-nested-loading div.ant-spin-container div.ant-table.ant-table-layout-fixed div.ant-table-container div.ant-table-content tbody.ant-table-tbody:nth-child(3) tr.ant-table-row.ant-table-row-level-0:nth-child(1) td.ant-table-cell:nth-child(1) a:nth-child(1) &gt; span._autoTooltipBox_17qqg_224&#x27;)
+Sat, 29 Jan 2022 17:35:19-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[1]/div[1]/div[7]/a[2]/div[1]&quot;)
+Sat, 29 Jan 2022 17:35:20-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;xpath&#x27;, &quot;//span[contains(text(),&#x27;新 建&#x27;)]&quot;)
+Sat, 29 Jan 2022 17:35:21-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：ui自动化测试输入接口
+Sat, 29 Jan 2022 17:35:22-page.webpage-webpage.py-[line:70]-INFO-[日志信息]: 输入文本：test/api/v1
+Sat, 29 Jan 2022 17:35:23-page.webpage-webpage.py-[line:88]-INFO-[日志信息]: 点击元素：(&#x27;css&#x27;, &#x27;div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body form.ant-form.ant-form-vertical.ant-form-hide-required-mark._apiForm_46y1v_88 div._panelContent_46y1v_107._base_46y1v_111:nth-child(1) div.ant-row:nth-child(3) div.ant-col.ant-col-12:nth-child(2) div.ant-row.ant-form-item div.ant-col.ant-form-item-control:nth-child(2) div.ant-form-item-control-input div.ant-form-item-control-input-content div._inlineFlex_1plww_34 &gt; span._tagWrapper_1plww_1&#x27;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     page.webpage:webpage.py:88 点击元素：(&#x27;css&#x27;, &#x27;div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div.ant-table-wrapper.ant-table-middle div.ant-spin-nested-loading div.ant-spin-container div.ant-table.ant-table-layout-fixed div.ant-table-container div.ant-table-content tbody.ant-table-tbody:nth-child(3) tr.ant-table-row.ant-table-row-level-0:nth-child(1) td.ant-table-cell:nth-child(1) a:nth-child(1) &gt; span._autoTooltipBox_17qqg_224&#x27;)
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//body/div[@id=&#x27;root&#x27;]/div[@id=&#x27;mainRoot&#x27;]/div[1]/div[1]/div[1]/div[7]/a[2]/div[1]&quot;)
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;xpath&#x27;, &quot;//span[contains(text(),&#x27;新 建&#x27;)]&quot;)
+INFO     page.webpage:webpage.py:70 输入文本：ui自动化测试输入接口
+INFO     page.webpage:webpage.py:70 输入文本：test/api/v1
+INFO     page.webpage:webpage.py:88 点击元素：(&#x27;css&#x27;, &#x27;div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body form.ant-form.ant-form-vertical.ant-form-hide-required-mark._apiForm_46y1v_88 div._panelContent_46y1v_107._base_46y1v_111:nth-child(1) div.ant-row:nth-child(3) div.ant-col.ant-col-12:nth-child(2) div.ant-row.ant-form-item div.ant-col.ant-form-item-control:nth-child(2) div.ant-form-item-control-input div.ant-form-item-control-input-content div._inlineFlex_1plww_34 &gt; span._tagWrapper_1plww_1&#x27;)<br/> ----------------------------Captured stderr teardown---------------------------- <br/>Sat, 29 Jan 2022 17:35:44-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_testmanage.py::TestTestManage::test_create_interface
+Sat, 29 Jan 2022 17:35:44-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: failed
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td>新建页面</td>
-          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_create_new_page</td>
-          <td class="col-duration">24.46</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="5">
-            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td>收藏按钮测试</td>
-          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_star_button</td>
-          <td class="col-duration">2.15</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="5">
-            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td>关注按钮测试</td>
-          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_focus_button</td>
-          <td class="col-duration">6.15</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="5">
-            <div class="empty log">通过的用例未捕获日志输出.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td>收藏页面测试</td>
-          <td class="col-name">TestCase/test_wiki.py::TestWiki::test_star_page</td>
-          <td class="col-duration">2.33</td>
+          <td>创建测试管理空间</td>
+          <td class="col-name">TestCase/test_testmanage.py::TestTestManage::test_create_manage</td>
+          <td class="col-duration">37.18</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="5">
