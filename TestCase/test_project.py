@@ -19,17 +19,17 @@ from utils.times import sleep
 @allure.feature("测试项目模块")
 class TestProject:
 
-    # @pytest.fixture(scope='class', autouse=True)
-    # def is_login(self, drivers):
-    #     """点击登录"""
-    #     login = LoginPage(drivers)
-    #     login.get_url(ini.url)
-    #     login = LoginPage(drivers)
-    #     login.click_login()
-    #     login.input_acount(ini.account)
-    #     login.input_passwd(ini.password)
-    #     login.submit_login()
-    #     login.click_enter_workspace()
+    @pytest.fixture(scope='class', autouse=True)
+    def is_login(self, drivers):
+        """点击登录"""
+        login = LoginPage(drivers)
+        login.get_url(ini.url)
+        login = LoginPage(drivers)
+        login.click_login()
+        login.input_acount(ini.account)
+        login.input_passwd(ini.password)
+        login.submit_login()
+        login.click_enter_workspace()
 
     @allure.feature("新建项目用例")
     def test_create_project(self, drivers):
@@ -80,6 +80,18 @@ class TestProject:
         print(before_star_name,after_star_name)
         assert before_star_name == after_star_name
 
+    def test_project_relation_wiki(self,drivers):
+        """项目管理列表关联wiki功能"""
+        project = ProjectPage(drivers)
+        project.click_project()
+        project.get_relation_wiki()
+        project.click_relation_wiki_icon()
+        project.click_relation_wiki_button()
+        project.click_wiki_space()
+        before_relation_wiki_name = project.get_select_wiki_space_name()
+        project.click_first_wiki_item()
+        after_relation_wiki_name = project.get_relation_wiki_space_name()
+        print(before_relation_wiki_name,after_relation_wiki_name)
 
 
 

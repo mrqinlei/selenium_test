@@ -11,6 +11,9 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from config.conf import cm
 from utils.times import sleep
 from utils.logger import Logger
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium .webdriver.support.select import Select
+
 
 log = Logger(__name__).logger
 
@@ -69,7 +72,7 @@ class WebPage(object):
         ele.send_keys(txt)
         log.info("输入文本：{}".format(txt))
 
-    def input_text_withoutclear(self,locator,txt):
+    def input_text_withoutclear(self, locator, txt):
         """输入（输入前不清空）"""
         sleep(0.5)
         ele = self.find_element(locator)
@@ -78,7 +81,6 @@ class WebPage(object):
 
     def press_enter(self):
         self.send_keys(Keys.ENTER)
-
 
     def is_click(self, locator):
         """点击"""
@@ -116,8 +118,6 @@ class WebPage(object):
         """获取元素属性"""
         return self.find_element(locator).get_attribute(name)
 
-
-
     @property
     def get_source(self):
         """获取页面源代码"""
@@ -131,7 +131,14 @@ class WebPage(object):
     def send_keys(self, ENTER):
         pass
 
+    def move_and_stay(self, locator):
+        """悬停"""
+        ele = self.find_element(locator)
+        ActionChains(self.driver).move_to_element(ele).perform()
+
+    # def select_by_index(self, locator):
+    #     """通过位置选择下拉框"""
+    #     Select(self.driver).select_by_index(1)
 
 if __name__ == "__main__":
     pass
-

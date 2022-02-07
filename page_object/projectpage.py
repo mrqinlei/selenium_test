@@ -101,3 +101,33 @@ class ProjectPage(WebPage):
     def click_my_star(self):
         """点击我的收藏"""
         self.is_click(project['我的收藏'])
+
+    def get_relation_wiki(self):
+        """悬停获得关联icon"""
+        self.move_and_stay(project['获得项目名称'])
+
+    def click_relation_wiki_icon(self):
+        """点击关联wiki的icon"""
+        self.is_click(project['关联wiki'])
+
+    def click_relation_wiki_button(self):
+        """点击关联wiki的button"""
+        self.is_click(project['关联wiki空间'])
+
+    def click_wiki_space(self):
+        """"点击关联下拉框"""
+        self.is_click(project['选择wiki空间'])
+
+
+    def click_first_wiki_item(self):
+        """选择第一个wiki空间"""
+        self.is_click(project['确定wiki空间'])
+
+
+    def get_select_wiki_space_name(self):
+        """获取第一个空间的名称"""
+        return self.element_text(project['确定wiki空间'])
+
+    def get_relation_wiki_space_name(self):
+        """获取关联成功后第一个wiki空间名称"""
+        return self.element_text(project['关联后wiki空间名称'])
