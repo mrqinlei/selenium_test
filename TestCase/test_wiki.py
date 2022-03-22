@@ -29,7 +29,6 @@ class TestWiki:
         login.input_acount(ini.account)
         login.input_passwd(ini.password)
         login.submit_login()
-        login.click_enter_workspace()
 
     @allure.feature("新建wiki用例")
     def test_create_wiki_space(self, drivers):
@@ -80,7 +79,7 @@ class TestWiki:
         wiki.click_input_link()
         link = "https://baiudu/com"
         sleep(1)
-        wiki.input_link(link)
+        # wiki.input_link(link)
         wiki.click_enter()
         wiki.click_publish_button()
         assert wiki.check_title() == title

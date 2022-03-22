@@ -29,7 +29,6 @@ class TestProject:
         login.input_acount(ini.account)
         login.input_passwd(ini.password)
         login.submit_login()
-        login.click_enter_workspace()
 
     @allure.feature("新建项目用例")
     def test_create_project(self, drivers):

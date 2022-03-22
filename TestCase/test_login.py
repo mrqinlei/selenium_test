@@ -30,7 +30,7 @@ class TestLogin:
         login.submit_login()
         sleep()
         res = login.login_fail_alert()
-        login.click_enter_workspace()
+        # login.click_enter_workspace()
         if res:
             # assert res == "连续失败5次，请15分钟之后再试"
             assert res is not None
