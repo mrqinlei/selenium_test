@@ -1,6 +1,0 @@
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1 div._sideBar_1otbf_5 div.customScrollBar._sideBarMenu_1otbf_39:nth-child(2) div._menuItem_1otbf_55._activeMenu_1otbf_105:nth-child(3) a._menuItemLink_1otbf_67:nth-child(1) div._menuItemText_1otbf_71 div:nth-child(1) span.anticon._iconStyle_1otbf_63 svg:nth-child(1) > use:nth-child(1)')
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('xpath', "//span[contains(text(),'新建代码库')]")
-[32mINFO    [0m page.webpage:webpage.py:70 输入文本：ui_test131
-[32mINFO    [0m page.webpage:webpage.py:70 输入文本：ut730
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('xpath', "//span[contains(text(),'确定')]")
-[32mINFO    [0m page.webpage:webpage.py:112 获取文本：ut730

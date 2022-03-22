@@ -1,4 +1,0 @@
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[1]/a[3]/div[1]")
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168.noScrollBar div:nth-child(1) div._root_1ywqg_1:nth-child(1) div._header_1ywqg_103 div._buttonGroup_1ywqg_123 > span.anticon.anticon-plus-circle._plusIcon_1ywqg_126:nth-child(1)')
-[32mINFO    [0m page.webpage:webpage.py:70 输入文本：uitestplan
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body div:nth-child(2) button.ant-btn.ant-btn-primary:nth-child(2) > span:nth-child(1)')

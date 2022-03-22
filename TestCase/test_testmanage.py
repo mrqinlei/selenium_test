@@ -18,16 +18,16 @@ from common.readconfig import ReadConfig
 @allure.feature("测试测试管理模块")
 class TestTestManage:
 
-    @pytest.fixture(scope='class', autouse=True)
-    def is_login(self, drivers):
-        """点击登录"""
-        login = LoginPage(drivers)
-        login.get_url(ini.url)
-        login = LoginPage(drivers)
-        login.click_login()
-        login.input_acount(ini.account)
-        login.input_passwd(ini.password)
-        login.submit_login()
+    # @pytest.fixture(scope='class', autouse=True)
+    # def is_login(self, drivers):
+    #     """点击登录"""
+    #     login = LoginPage(drivers)
+    #     login.get_url(ini.url)
+    #     login = LoginPage(drivers)
+    #     login.click_login()
+    #     login.input_acount(ini.account)
+    #     login.input_passwd(ini.password)
+    #     login.submit_login()
 
     def test_create_manage(self, drivers):
         """创建测试管理空间"""

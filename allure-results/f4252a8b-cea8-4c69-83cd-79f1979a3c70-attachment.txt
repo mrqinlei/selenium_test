@@ -1,5 +1,0 @@
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[8]/a[1]/div[1]")
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168 div:nth-child(1) div._header_vadur_13._root_12ysu_1 div._rightNode_vadur_39 > button.ant-btn.ant-btn-primary')
-[32mINFO    [0m page.webpage:webpage.py:70 输入文本：ui_test426
-[32mINFO    [0m page.webpage:webpage.py:70 输入文本：ut863
-[32mINFO    [0m page.webpage:webpage.py:88 点击元素：('xpath', "//span[contains(text(),'确 定')]")

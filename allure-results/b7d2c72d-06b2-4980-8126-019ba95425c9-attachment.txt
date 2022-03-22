@@ -1,0 +1,5 @@
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', '/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[10]/a[1]/div[1]')
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', '/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]')
+[32mINFO    [0m page.webpage:webpage.py:73 输入文本：ui_test275
+[32mINFO    [0m page.webpage:webpage.py:73 输入文本：ut230
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', "//span[contains(text(),'确 定')]")

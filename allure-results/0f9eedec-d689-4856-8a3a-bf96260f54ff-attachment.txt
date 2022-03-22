@@ -1,0 +1,9 @@
+Tue, 22 Mar 2022 20:34:31-page.webpage-webpage.py-[line:37]-INFO-[日志信息]: 打开网页：http://hhh.ezone-test.work
+Tue, 22 Mar 2022 20:34:31-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_login.py::TestLogin::test_login
+Tue, 22 Mar 2022 20:34:31-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
+Tue, 22 Mar 2022 20:34:37-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('class', '_buttonLink_1fhgk_165')
+Tue, 22 Mar 2022 20:34:38-page.webpage-webpage.py-[line:73]-INFO-[日志信息]: 输入文本：afei
+Tue, 22 Mar 2022 20:34:39-page.webpage-webpage.py-[line:73]-INFO-[日志信息]: 输入文本：jiandanliangdian123456
+Tue, 22 Mar 2022 20:34:42-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('css', 'div._pageRoot_vnh37_51:nth-child(2) div._root_vnh37_1 div.ant-tabs.ant-tabs-top.ant-tabs-centered._tabsRoot_vnh37_37 div.ant-tabs-content-holder div.ant-tabs-content.ant-tabs-content-top div.ant-tabs-tabpane.ant-tabs-tabpane-active:nth-child(1) form.ant-legacy-form.ant-legacy-form-horizontal._form_vnh37_19 div.ant-row.ant-legacy-form-item:nth-child(4) div.ant-col.ant-legacy-form-item-control-wrapper div.ant-legacy-form-item-control span.ant-legacy-form-item-children button.ant-btn.ant-btn-primary.ant-btn-block > span:nth-child(1)')
+Tue, 22 Mar 2022 20:35:03-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_login.py::TestLogin::test_login
+Tue, 22 Mar 2022 20:35:03-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed

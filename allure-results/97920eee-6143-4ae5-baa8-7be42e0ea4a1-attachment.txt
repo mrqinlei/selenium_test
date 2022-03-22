@@ -1,0 +1,9 @@
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._sideBar_1otbf_5 div.customScrollBar._sideBarMenu_1otbf_39:nth-child(2) div._menuItem_1otbf_55:nth-child(1) a._menuItemLink_1otbf_67 > div._menuItemText_1otbf_71')
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]")
+[32mINFO    [0m page.webpage:webpage.py:73 输入文本：ui_test872
+[32mINFO    [0m page.webpage:webpage.py:73 输入文本：ut268
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('class', 'ant-select-selection-search-input')
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('class', '_searchInputOption_1fp3y_234')
+[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('css', 'div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body div._root_1o3om_1 form.ant-form.ant-form-horizontal.ant-form-hide-required-mark div:nth-child(8) button.ant-btn.ant-btn-primary:nth-child(2) > span:nth-child(1)')
+[32mINFO    [0m page.webpage:webpage.py:114 获取文本：ui_test872
+[32mINFO    [0m utils.logger:test_project.py:45 ui_test872
