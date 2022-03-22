@@ -2,3 +2,5 @@ logs/*
 *_temp
 .idea/
 .DS_Store
+allure-results/*
+allure-report/*
