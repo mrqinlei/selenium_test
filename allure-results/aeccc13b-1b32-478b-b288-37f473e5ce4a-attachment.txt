@@ -1,4 +1,0 @@
-Tue, 22 Mar 2022 20:37:44-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_wiki.py::TestWiki::test_focus_button
-Tue, 22 Mar 2022 20:37:44-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
-Tue, 22 Mar 2022 20:37:44-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_wiki.py::TestWiki::test_focus_button
-Tue, 22 Mar 2022 20:37:44-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: failed

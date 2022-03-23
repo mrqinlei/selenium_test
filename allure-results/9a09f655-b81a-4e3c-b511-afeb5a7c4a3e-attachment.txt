@@ -1,9 +1,0 @@
-Tue, 22 Mar 2022 20:36:27-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_testmanage.py::TestTestManage::test_create_manage
-Tue, 22 Mar 2022 20:36:27-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
-Tue, 22 Mar 2022 20:36:28-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('xpath', '/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[10]/a[1]/div[1]')
-Tue, 22 Mar 2022 20:36:29-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('xpath', '/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]')
-Tue, 22 Mar 2022 20:36:30-page.webpage-webpage.py-[line:73]-INFO-[日志信息]: 输入文本：ui_test275
-Tue, 22 Mar 2022 20:36:30-page.webpage-webpage.py-[line:73]-INFO-[日志信息]: 输入文本：ut230
-Tue, 22 Mar 2022 20:36:31-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('xpath', "//span[contains(text(),'确 定')]")
-Tue, 22 Mar 2022 20:36:41-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_testmanage.py::TestTestManage::test_create_manage
-Tue, 22 Mar 2022 20:36:41-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed

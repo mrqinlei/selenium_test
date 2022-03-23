@@ -18,8 +18,9 @@ from utils.times import sleep
 @allure.feature("测试code模块")
 class TestcodeRepository:
 
+    # @classmethod
     # @pytest.fixture(scope='class', autouse=True)
-    # def is_login(self, drivers):
+    # def _is_login(self, drivers):
     #     """点击登录"""
     #     login = LoginPage(drivers)
     #     login.get_url(ini.url)
@@ -29,6 +30,8 @@ class TestcodeRepository:
     #     login.input_passwd(ini.password)
     #     login.submit_login()
 
+    @pytest.mark.main
+    @pytest.mark.repo
     @allure.feature("新建代码库用例")
     def test_create_wiki_space(self, drivers):
         """新建代码库测试"""
@@ -42,4 +45,4 @@ class TestcodeRepository:
 
 
 if __name__ == '__main__':
-    pytest.main(['TestCase/test_coderepository.py'])
+    pytest.main(['-m',"login"])

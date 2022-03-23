@@ -20,7 +20,7 @@ from utils.times import sleep
 class TestWiki:
 
     # @pytest.fixture(scope='class', autouse=True)
-    # def is_login(self, drivers):
+    # def __is_login(self, drivers):
     #     """点击登录"""
     #     login = LoginPage(drivers)
     #     login.get_url(ini.url)
@@ -30,6 +30,7 @@ class TestWiki:
     #     login.input_passwd(ini.password)
     #     login.submit_login()
 
+    @pytest.mark.main
     @allure.feature("新建wiki用例")
     def test_create_wiki_space(self, drivers):
         """新建wiki空间测试"""
@@ -48,6 +49,7 @@ class TestWiki:
         # print(res)
         assert wiki.all_button_exists() is not None
 
+    @pytest.mark.main
     @allure.feature("wiki新建页面")
     def test_create_new_page(self,drivers):
         """新建页面"""
@@ -84,6 +86,7 @@ class TestWiki:
         wiki.click_publish_button()
         assert wiki.check_title() == title
 
+    @pytest.mark.main
     @allure.feature('收藏按钮')
     def test_star_button(self,drivers):
         """收藏按钮测试"""
@@ -93,6 +96,7 @@ class TestWiki:
         star_status = wiki.get_star_button_text()
         assert star_status == '取消收藏'
 
+    @pytest.mark.main
     @allure.feature('关注按钮')
     def test_focus_button(self,drivers):
         """关注按钮测试"""
@@ -101,6 +105,7 @@ class TestWiki:
         focus_status = wiki.get_focus_button_text()
         assert focus_status == "取消关注"
 
+    @pytest.mark.main
     @allure.feature('收藏页面')
     def test_star_page(self,drivers):
         """收藏页面测试"""

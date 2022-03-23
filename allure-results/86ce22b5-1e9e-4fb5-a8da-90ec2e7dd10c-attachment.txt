@@ -1,8 +1,0 @@
-Tue, 22 Mar 2022 20:35:34-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_project.py::TestProject::test_create_plan
-Tue, 22 Mar 2022 20:35:34-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed
-Tue, 22 Mar 2022 20:35:36-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[1]/a[3]/div[1]")
-Tue, 22 Mar 2022 20:35:37-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('css', 'div._root_j11bm_1:nth-child(3) div._root_1otbf_1:nth-child(1) div._right_1otbf_146 div._main_1otbf_154 div.customScrollBar._content_1otbf_168.noScrollBar div._root_1kkbm_1:nth-child(1) div._header_1kkbm_103 div._buttonGroup_1kkbm_127 span.anticon.anticon-plus-circle._plusIcon_1kkbm_130 > svg:nth-child(1)')
-Tue, 22 Mar 2022 20:35:37-page.webpage-webpage.py-[line:73]-INFO-[日志信息]: 输入文本：uitestplan
-Tue, 22 Mar 2022 20:35:38-page.webpage-webpage.py-[line:90]-INFO-[日志信息]: 点击元素：('css', 'div._root_j11bm_1.ant-scrolling-effect:nth-child(3) div.ant-drawer.ant-drawer-right.ant-drawer-open div.ant-drawer-content-wrapper div.ant-drawer-content div.ant-drawer-wrapper-body div.ant-drawer-body div:nth-child(2) button.ant-btn.ant-btn-primary:nth-child(2) > span:nth-child(1)')
-Tue, 22 Mar 2022 20:35:38-utils.logger-conftest.py-[line:66]-INFO-[日志信息]: nodeid：TestCase/test_project.py::TestProject::test_create_plan
-Tue, 22 Mar 2022 20:35:38-utils.logger-conftest.py-[line:67]-INFO-[日志信息]: 运行结果: passed

@@ -1,5 +1,0 @@
-[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', "//body/div[@id='root']/div[@id='mainRoot']/div[1]/div[1]/div[1]/div[1]/a[4]/div[1]/span[1]")
-[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', '/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]/span[1]')
-[32mINFO    [0m page.webpage:webpage.py:73 输入文本：ui自动化测试
-[32mINFO    [0m page.webpage:webpage.py:73 输入文本：ui自动化测试
-[32mINFO    [0m page.webpage:webpage.py:90 点击元素：('xpath', "//span[contains(text(),'确 定')]")

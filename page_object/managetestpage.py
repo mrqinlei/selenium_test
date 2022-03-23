@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 # @Time    : 2022/1/7 2:20 下午
-# @File    : testmanagepage.py
+# @File    : managetestpage.py
 from page.webpage import WebPage, sleep
 from common.readelement import Element
 
-testmanage = Element('testmanage')
+testmanage = Element('managetest')
 
-class TestManage(WebPage):
+
+class ManageTest(WebPage):
     """测试管理类"""
 
     def click_test_manage(self):
@@ -18,10 +19,10 @@ class TestManage(WebPage):
         """点击新建"""
         self.is_click(testmanage['新建'])
 
-    def add_testmanage_content(self,name,code):
+    def add_testmanage_content(self, name, code):
         """填写测试管理空间信息"""
-        self.input_text(testmanage['空间名称'],name)
-        self.input_text(testmanage['英文标识'],code)
+        self.input_text(testmanage['空间名称'], name)
+        self.input_text(testmanage['英文标识'], code)
 
     def click_confirm(self):
         """点击确定"""
@@ -39,10 +40,9 @@ class TestManage(WebPage):
         """点击创建用例"""
         self.is_click(testmanage['新建用例'])
 
-    def input_case_name(self,case_name):
+    def input_case_name(self, case_name):
         """输入用例名称"""
-        self.input_text(testmanage['用例名称'],case_name)
-
+        self.input_text(testmanage['用例名称'], case_name)
 
     def click_charge_man(self):
         """点击负责人"""
@@ -56,13 +56,13 @@ class TestManage(WebPage):
         """点击新增步骤"""
         self.is_click(testmanage['新增步骤'])
 
-    def input_step(self,step):
+    def input_step(self, step):
         """输入步骤"""
-        self.input_text(testmanage['步骤1'],step)
+        self.input_text(testmanage['步骤1'], step)
 
-    def input_except(self,except_result):
+    def input_except(self, except_result):
         """输入预期结果"""
-        self.input_text(testmanage['预期1'],except_result)
+        self.input_text(testmanage['预期1'], except_result)
 
     def click_create_case_confirm(self):
         """点击确定创建"""
@@ -84,13 +84,13 @@ class TestManage(WebPage):
         """点击新建接口"""
         self.is_click(testmanage['新建接口按钮'])
 
-    def input_interface_name(self,interface_name):
+    def input_interface_name(self, interface_name):
         """输入接口名称"""
-        self.input_text(testmanage['接口名称'],interface_name)
+        self.input_text(testmanage['接口名称'], interface_name)
 
-    def input_url(self,url):
+    def input_url(self, url):
         """输入接口uri"""
-        self.input_text(testmanage['URL'],url)
+        self.input_text(testmanage['URL'], url)
 
     def confirm_create_interface(self):
         """确定创建接口"""
