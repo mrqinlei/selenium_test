@@ -4,3 +4,4 @@ logs/*
 .DS_Store
 allure-results/*
 allure-report/*
+report.html
