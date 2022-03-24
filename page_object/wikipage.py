@@ -125,3 +125,99 @@ class WikiPage(WebPage):
     def get_star_title(self):
         """获取收藏标题"""
         return self.element_text(wiki['收藏名称'])
+
+    def click_more_function(self):
+        """点击wiki页面更多功能"""
+        self.is_click(wiki['更多功能'])
+
+    def click_create_son_page(self):
+        """点击创建子页面"""
+        self.is_click(wiki['创建子页面'])
+
+    def click_son_page_publish(self):
+        """发布子卡片"""
+        self.is_click(wiki['子卡片发布'])
+
+    def click_delete_page(self):
+        """点击删除页面"""
+        self.is_click(wiki['删除页面'])
+
+    def confirm_delete(self):
+        """点击确认删除页面"""
+        self.is_click(wiki['删除确定'])
+
+    def check_delete_success(self):
+        """检查删除成功"""
+        return self.is_exists(wiki['删除成功'])
+
+    def click_move_to_new_space(self):
+        """点击移到新空间"""
+        self.is_click(wiki['移动到新空间'])
+
+    def click_move_new_space_select(self):
+        """点击选择空间框"""
+        self.is_click(wiki['新空间选择框'])
+
+    def choose_new_space(self):
+        """选择新空间"""
+        self.is_click(wiki['新空间'])
+
+    def new_space_confirm(self):
+        """点击确定移动到新空间"""
+        self.is_click(wiki['新空间确定'])
+
+    def check_page_list(self):
+        """检查页面列表面包屑"""
+        return self.element_text(wiki['页面列表面包屑'])
+
+    def click_recent_visit(self):
+        """点击最近访问"""
+        self.is_click(wiki['最近访问'])
+
+    def check_recent_visit(self):
+        """检查最近访问面包屑"""
+        return self.element_text(wiki['最近访问面包屑'])
+
+    def check_my_star(self):
+        """检查我的收藏面包屑"""
+        return self.element_text(wiki['我的收藏面包屑'])
+
+    def click_my_draft(self):
+        """点击我的草稿"""
+        self.is_click(wiki['我的草稿'])
+
+    def check_my_draft(self):
+        """检查我的草稿面包屑"""
+        return self.element_text(wiki['我的草稿面包屑'])
+
+    def click_recycle(self):
+        """点击我的回收站"""
+        self.is_click(wiki['回收站'])
+
+    def check_recycle(self):
+        """检查回收站面包屑"""
+        return self.element_text(wiki['回收站面包屑'])
+
+    def click_settings(self):
+        """点击设置"""
+        self.is_click(wiki['设置'])
+
+    def check_settings(self):
+        """检查设置面包屑"""
+        return self.element_text(wiki['设置面包屑'])
+
+    def click_ops_operation(self):
+        """点击运维操作"""
+        self.is_click(wiki['运维操作'])
+
+    def click_delete_space(self):
+        """点击删除空间"""
+        self.is_click(wiki['删除空间'])
+
+    def confirm_delete_space(self):
+        """点击确认删除空间"""
+        self.is_click(wiki['确认删除'])
+
+    def click_list_first_page(self):
+        """点击列表首个页面"""
+        self.is_click(wiki['列表首个页面'])
