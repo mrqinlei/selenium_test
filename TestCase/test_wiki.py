@@ -200,11 +200,5 @@ class TestWiki:
         wiki.confirm_delete_space()
 
 
-
-
-
-
-
-
 if __name__ == '__main__':
     pytest.main(['TestCase/test_wiki.py'])
