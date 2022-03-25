@@ -5,3 +5,4 @@ logs/*
 allure-results/*
 allure-report/*
 report.html
+TestCase/report.html
