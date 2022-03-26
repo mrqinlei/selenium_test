@@ -78,6 +78,7 @@ class TestWiki:
     def test_star_space(self, drivers):
         """空间收藏"""
         # TODO
+        print('test')
         pass
 
     @pytest.mark.wiki
