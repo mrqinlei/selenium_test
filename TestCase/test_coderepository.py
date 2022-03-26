@@ -72,10 +72,32 @@ class TestCodeRepository:
         graph = coderepository.check_graph_crumbs()
         assert pushes == 'Pushes' and commits == '提交' and graph == '网格'
 
-    def test_secondary_page_check(self):
-        #TODO
+    @pytest.mark.main
+    @pytest.mark.repo
+    def test_secondary_page_check(self, drivers):
         """二级页面检查"""
-        pass
+        coderepository = CodeRepositoryPage(drivers)
+        coderepository.click_file()
+        file_crumbs = coderepository.check_file_crumbs()
+        coderepository.click_history()
+        history_crumbs = coderepository.check_history_crumbs()
+        coderepository.click_compare()
+        compare_crumbs = coderepository.check_compare_crumbs()
+        coderepository.click_branch()
+        branch_crumbs = coderepository.check_branch_crumbs()
+        coderepository.click_version()
+        version_crumbs = coderepository.check_version_crumbs()
+        coderepository.click_review()
+        review_crumbs = coderepository.check_review_crumbs()
+        coderepository.click_scan()
+        scan_crumbs = coderepository.check_scan_crumbs()
+        coderepository.click_statistics()
+        statistics_crumbs = coderepository.check_statistics_crumbs()
+        coderepository.click_settings()
+        settings_crumbs = coderepository.check_settings_crumbs()
+        assert file_crumbs == '文件' and history_crumbs == '历史' and compare_crumbs == '对比' \
+               and branch_crumbs == '分支' and version_crumbs == '版本' and review_crumbs == '评审' \
+               and scan_crumbs == '扫描' and statistics_crumbs == '统计' and settings_crumbs == '基本设置'
 
     @pytest.mark.main
     @pytest.mark.repo
@@ -129,7 +151,7 @@ class TestCodeRepository:
 
     @pytest.mark.main
     @pytest.mark.repo
-    def test_delete_repo(self,drivers):
+    def test_delete_repo(self, drivers):
         """删除代码库"""
         coderepository = CodeRepositoryPage(drivers)
         coderepository.click_settings()
@@ -138,8 +160,6 @@ class TestCodeRepository:
         repo_name = coderepository.get_repo_name()
         coderepository.input_repo_name(repo_name)
         coderepository.confirm_delete_repo()
-
-
 
 
 if __name__ == '__main__':

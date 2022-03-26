@@ -207,3 +207,51 @@ class CodeRepositoryPage(WebPage):
     def confirm_delete_repo(self):
         """确认删除代码库"""
         self.is_click(code['确认删除'])
+
+    def check_file_crumbs(self):
+        """检查文件面包屑"""
+        return self.element_text(code['检查文件面包屑'])
+
+    def check_history_crumbs(self):
+        """检查历史面包屑"""
+        return self.element_text(code['检查历史面包屑'])
+
+    def click_compare(self):
+        """点击对比"""
+        self.is_click(code['对比'])
+
+    def check_compare_crumbs(self):
+        """检查对比面包屑"""
+        return self.element_text(code['检查对比面包屑'])
+
+    def check_branch_crumbs(self):
+        """检查分支面包屑"""
+        return self.element_text(code['检查分支面包屑'])
+
+    def check_version_crumbs(self):
+        """检查版本面包屑"""
+        return self.element_text(code['检查版本面包屑'])
+
+    def check_review_crumbs(self):
+        """检查评审面包屑"""
+        return self.element_text(code['检查评审面包屑'])
+
+    def click_scan(self):
+        """点击扫描"""
+        self.is_click(code['扫描'])
+
+    def check_scan_crumbs(self):
+        """检查扫描面包屑"""
+        return self.element_text(code['检查扫描面包屑'])
+
+    def click_statistics(self):
+        """点击统计"""
+        self.is_click(code['统计'])
+
+    def check_statistics_crumbs(self):
+        """检查统计面包屑"""
+        return self.element_text(code['检查统计面包屑'])
+
+    def check_settings_crumbs(self):
+        """检查设置面包屑"""
+        return self.element_text(code['检查设置面包屑'])
