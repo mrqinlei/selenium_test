@@ -1,7 +1,0 @@
-pip
-selenium
-pytest
-pytest-html
-allure-pytest
-PyYAML
-zmail
