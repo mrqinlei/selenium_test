@@ -6,4 +6,3 @@ allure-results/*
 allure-report/*
 report.html
 *.html
-TestCase/report.html
