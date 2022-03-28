@@ -53,7 +53,7 @@ class TestWiki:
 
     @pytest.mark.wiki
     @pytest.mark.main
-    def test_secondary_page(self,drivers):
+    def test_secondary_page(self, drivers):
         """二级页面切换检查面包屑"""
         wiki = WikiPage(drivers)
         wiki.click_first_wiki_space()
@@ -69,17 +69,23 @@ class TestWiki:
         recycle = wiki.check_recycle()
         wiki.click_settings()
         settings = wiki.check_settings()
-        print(page_list,recent_visit,star_page,my_draft,recycle,settings)
-        assert page_list == '页面列表' and recent_visit == '最近访问' and star_page == '我的收藏'\
-        and my_draft == '我的草稿' and recycle == '回收站' and settings == '设置'
+        print(page_list, recent_visit, star_page, my_draft, recycle, settings)
+        assert page_list == '页面列表' and recent_visit == '最近访问' and star_page == '我的收藏' \
+               and my_draft == '我的草稿' and recycle == '回收站' and settings == '设置'
 
     @pytest.mark.wiki
     @pytest.mark.main
     def test_star_space(self, drivers):
-        """空间收藏"""
-        # TODO
-        print('test')
-        pass
+        """收藏空间"""
+        wiki = WikiPage(drivers)
+        wiki.click_wiki()
+        # wiki.click_page_list()
+        wiki.click_star_space_button()
+        before_star_space = wiki.get_star_english_flag()
+        wiki.click_my_star_space()
+        after_star_space = wiki.get_star_english_flag()
+        wiki.click_star_space_button()
+        assert before_star_space == after_star_space
 
     @pytest.mark.wiki
     @pytest.mark.main
@@ -177,6 +183,8 @@ class TestWiki:
         wiki.click_move_new_space_select()
         wiki.choose_new_space()
         wiki.new_space_confirm()
+
+
 
     @pytest.mark.wiki
     @pytest.mark.main

@@ -221,3 +221,15 @@ class WikiPage(WebPage):
     def click_list_first_page(self):
         """点击列表首个页面"""
         self.is_click(wiki['列表首个页面'])
+
+    def click_star_space_button(self):
+        """点击收藏空间按钮"""
+        self.is_click(wiki['空间收藏'])
+
+    def click_my_star_space(self):
+        """点击我的收藏空间"""
+        self.is_click(wiki['我的空间收藏'])
+
+    def get_star_english_flag(self):
+        """获得收藏空间英文标识"""
+        return self.element_text(wiki['收藏前空间英文标识'])
