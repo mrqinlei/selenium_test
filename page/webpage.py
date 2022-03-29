@@ -128,17 +128,20 @@ class WebPage(object):
         self.driver.refresh()
         self.driver.implicitly_wait(30)
 
-    def send_keys(self, ENTER):
-        pass
 
     def move_and_stay(self, locator):
         """悬停"""
         ele = self.find_element(locator)
         ActionChains(self.driver).move_to_element(ele).perform()
 
-    # def select_by_index(self, locator):
-    #     """通过位置选择下拉框"""
-    #     Select(self.driver).select_by_index(1)
+    def move_to_location(self):
+        self.driver.execute_script('window.scrollBy(1000,1050)')
+        self.driver.switch_to.active_element.send_keys(Keys.ENTER)
+
+    def scroll(self):
+        js = "var q=document.documentElement.scrollTop=10000"
+        self.driver.execute_script(js)
+
 
 if __name__ == "__main__":
     pass
