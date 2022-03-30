@@ -6,14 +6,11 @@ from random import randint
 
 import pytest
 import allure
-from selenium.webdriver import ActionChains, Keys
 
 from page_object.loginpage import LoginPage
-from utils.logger import log
-from utils.times import sleep
+
 from common.readconfig import ini
 from page_object.managetestpage import ManageTest
-from common.readconfig import ReadConfig
 
 
 @allure.feature("测试测试管理模块")

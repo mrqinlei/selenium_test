@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2022/1/7 2:20 下午
 # @File    : managetestpage.py
-from selenium.webdriver import Keys
 
 from page.webpage import WebPage, sleep
 from common.readelement import Element
@@ -12,10 +11,6 @@ testmanage = Element('managetest')
 
 class ManageTest(WebPage):
     """测试管理类"""
-
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.switch_to = None
 
     def click_test_manage(self):
         """点击测试管理"""
