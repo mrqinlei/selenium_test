@@ -3,12 +3,9 @@
 # @Time    : 2022/1/7 2:44 下午
 # @File    : test_testmanage.py
 from random import randint
-
 import pytest
 import allure
-
 from page_object.loginpage import LoginPage
-
 from common.readconfig import ini
 from page_object.managetestpage import ManageTest
 
@@ -17,7 +14,7 @@ from page_object.managetestpage import ManageTest
 class TestTestManage:
 
     @pytest.fixture(scope='class', autouse=True)
-    def __is_login(self, drivers):
+    def _is_login(self, drivers):
         """点击登录"""
         login = LoginPage(drivers)
         login.get_url(ini.url)

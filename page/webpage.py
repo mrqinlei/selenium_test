@@ -5,6 +5,7 @@ selenium基类
 本文件存放了selenium基类的封装方法
 """
 from selenium.webdriver import Keys
+from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
@@ -89,6 +90,13 @@ class WebPage(object):
         sleep()
         log.info("点击元素：{}".format(locator))
 
+    def is_click_slow(self, locator):
+        """点击"""
+        ele = self.find_element(locator)
+        sleep(3)
+        ele.click()
+        log.info("点击元素：{}".format(locator))
+
     def is_exists(self, locator):
         """元素是否存在(DOM)"""
         try:
@@ -134,6 +142,7 @@ class WebPage(object):
         ele = self.find_element(locator)
         ActionChains(self.driver).move_to_element(ele).perform()
 
+
     def move_to_location(self):
         self.driver.execute_script('window.scrollBy(1000,1050)')
         self.driver.switch_to.active_element.send_keys(Keys.ENTER)
@@ -141,6 +150,7 @@ class WebPage(object):
     def scroll(self):
         js = "var q=document.documentElement.scrollTop=10000"
         self.driver.execute_script(js)
+
 
 
 if __name__ == "__main__":
