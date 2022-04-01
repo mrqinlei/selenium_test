@@ -151,6 +151,20 @@ class WebPage(object):
         js = "var q=document.documentElement.scrollTop=10000"
         self.driver.execute_script(js)
 
+    def find(self, locator):
+        '''查找元素，loctor = ("id", "kw")'''
+        element = WebDriverWait(self.driver, 30, 1).until(EC.presence_of_element_located(locator))
+        return element
+
+    def double_click(self,locator):
+        '''双击事件'''
+        element = self.find(locator)
+        ActionChains(self.driver).double_click(element).perform()
+
+    def send(self, locator, text):
+        '''发送文本'''
+        self.find(locator).send_keys(text)
+
 
 
 if __name__ == "__main__":

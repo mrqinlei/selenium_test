@@ -7,7 +7,7 @@ HOST = 'HOST'
 ACCOUNT = 'ACCOUNT'
 PASSWORD = 'PASSWORD'
 internal = "internal"
-test = 'test'
+test321 = 'test321'
 qa = 'qa'
 
 
@@ -30,15 +30,15 @@ class ReadConfig(object):
 
     @property
     def url(self):
-        return self._get(test, HOST)
+        return self._get(test321, HOST)
 
     @property
     def account(self):
-        return self._get(test,ACCOUNT)
+        return self._get(test321,ACCOUNT)
 
     @property
     def password(self):
-        return self._get(test,PASSWORD)
+        return self._get(test321,PASSWORD)
 
 
 ini = ReadConfig()
