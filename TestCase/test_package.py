@@ -28,124 +28,98 @@ class TestPackage:
         login.input_passwd(ini.password)
         login.submit_login()
 
-    @pytest.mark.package
-    @pytest.mark.main
-    def test_secondary_page(self, drivers):
-        """测试二级页面"""
-        package = PackagePage(drivers)
-        package.click_package()
-        package.click_snapshot()
-        snapshot_crumbs = package.check_snapshot_crumbs()
-        package.click_release()
-        release_crumbs = package.check_release_crumbs()
-        package.click_mirror()
-        mirror_crumbs = package.check_mirror_crumbs()
-        assert snapshot_crumbs == '半成品库' and release_crumbs == '成品库' and mirror_crumbs == '镜像库'
 
     @pytest.mark.package
     @pytest.mark.main
-    def test_create_new_snapshot(self, drivers):
-        """新建半成品库"""
+    def test_create_package(self,drivers):
+        """新建制品库"""
         package = PackagePage(drivers)
         package.click_package()
         package.click_snapshot()
-        package.click_create_new_snapshot()
-        # package.click_new_repo_type()
-        # package.choose_repo_type()
-        package.input_repo_name("ui" + str(randint(1, 999)))
-        package.confirm_create_package()
+        package.click_create_new_package()
+        package.input_package_name('uitest_create')
+        package.input_package_describe('这是ui自动化创建的')
+        package.click_confirm()
+        package_name = package.get_new_package_name()
+        assert package_name == 'uitest_create'
 
     @pytest.mark.package
     @pytest.mark.main
-    def test_create_apk_package(self, drivers):
-        """新建apk包"""
+    def test_relation_project(self,drivers):
+        """关联项目功能"""
         package = PackagePage(drivers)
         package.click_package()
         package.click_snapshot()
-        package.click_apk()
-        package.click_create_package()
-        package.input_package_name("ui" + str(randint(1, 999)))
-        package.confirm_create_package()
-
-    @pytest.mark.package
-    @pytest.mark.main
-    def test_star_package(self, drivers):
-        """收藏包"""
-        package = PackagePage(drivers)
-        package.click_package()
-        package.click_snapshot()
-        package.click_star_button()
-        package.click_my_star()
-        star_package = package.check_star_snapshot()
-        package.click_cancel_star()
-        package.click_all()
-        assert star_package == 'apk'
-
-    @pytest.mark.package
-    @pytest.mark.main
-    def test_package_tab(self, drivers):
-        """测试包页面tab"""
-        package = PackagePage(drivers)
-        package.click_package()
-        package.click_snapshot()
-        package.click_package_list()
-        list_title_name = package.get_package_list_title_name()
-        package.click_use_guide()
-        get_use_guide_title = package.get_use_guide_title()
-        package.click_relate_project()
-        package.click_project()
+        package.click_new_create_package()
+        package.click_relation_project_tab()
+        package.click_relation_project()
         package.click_choose_project()
-        package.choose_first_project()
-        sleep(1)
-        package.delete_relation()
-        package.confirm_delete_relation()
-        assert list_title_name == '包名' and get_use_guide_title == '通过网页上传与下载'
+        project_name = package.get_project_name()
+        package.choose_project()
+        relation_project_name = package.get_relation_project_name()
+        package.click_cancel_relation()
+        package.click_confirm()
+        assert project_name == relation_project_name
+
 
     @pytest.mark.package
     @pytest.mark.main
-    def test_delete_package(self, drivers):
-        """删除包"""
+    def test_create_package_packet(self,drivers):
+        """snapshot package 新建包"""
         package = PackagePage(drivers)
         package.click_package()
         package.click_snapshot()
+        package.click_new_create_package()
         package.click_package_list()
-        package.delete_package()
-        package.confirm_delete()
+        package.click_create_new_snapshot_package()
+        package.input_snapshot_package_name("apple.com")
+        package.click_confirm()
+        package_name = package.get_snapshot_package_name()
+        package.click_delete_snapshot_package()
+        package.click_confirm_delete_snapshot_package()
+        assert package_name == 'apple.com'
 
     @pytest.mark.package
     @pytest.mark.main
-    def test_check_all_type_package(self, drivers):
-        """检查所有类型制品库"""
+    def test_delete_package(self,drivers):
+        """删除制品库"""
         package = PackagePage(drivers)
         package.click_package()
         package.click_snapshot()
-        package.click_apk()
-        apk_title = package.check_apk_title()
-        package.click_composer()
-        composer_title = package.check_composer_title()
-        package.click_conan()
-        conan_title = package.check_conan_title()
-        package.click_docker()
-        docker_title = package.check_docker_title()
-        package.click_helm()
-        helm_title = package.check_helm_title()
-        package.click_ipa()
-        ipa_title = package.check_ipa_title()
-        package.click_maven()
-        maven_title = package.check_maven_title()
-        package.click_npm()
-        npm_title = package.check_npm_title()
-        package.click_nuget()
-        nuget_title = package.check_nuget_title()
-        package.click_pypi()
-        pypi_title = package.check_pypi_title()
-        package.click_file()
-        file_title = package.check_file_title()
-        assert apk_title == 'apk' and composer_title == 'composer' and conan_title == 'conan' and \
-               docker_title == 'docker' and helm_title == 'helm' and ipa_title == 'ipa' and maven_title \
-               == 'maven' and npm_title == 'npm' and nuget_title == 'nuget' and pypi_title == 'pypi' and \
-               file_title == 'file'
+        package.click_new_create_package()
+        package.click_delete_package_tab()
+        package.click_delete_package_button()
+        package.input_delete_package_name('uitest_create')
+        package.confirm_delete_package()
 
+    @pytest.mark.package
+    @pytest.mark.main
+    def test_favourite_package(self,drivers):
+        """收藏制品库功能"""
+        package = PackagePage(drivers)
+        package.click_package()
+        package.click_snapshot()
+        before_star_package_name = package.get_package_name()
+        package.click_star_package()
+        package.click_my_favourite_tab()
+        after_star_package_name = package.get_package_name()
+        package.click_star_package()
+        print(before_star_package_name,after_star_package_name)
+        assert before_star_package_name == after_star_package_name
+
+    @pytest.mark.package
+    @pytest.mark.main
+    def test_crumbs(self,drivers):
+        """面包屑"""
+        package = PackagePage(drivers)
+        package.click_package()
+        package.click_snapshot()
+        snapshot_crumbs = package.get_crumbs()
+        package.click_release()
+        release_crumbs = package.get_crumbs()
+        package.click_mirror()
+        mirror_crumbs = package.get_crumbs()
+        assert snapshot_crumbs == '半成品库' and release_crumbs == '成品库' and mirror_crumbs == '镜像库'
 
 if __name__ == '__main__':
     pytest.mark['TestCase/test_package.py']
