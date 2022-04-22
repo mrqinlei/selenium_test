@@ -4,6 +4,8 @@ import sys
 import subprocess
 import os
 
+import pytest
+
 WIN = sys.platform.startswith('win')
 
 
@@ -19,4 +21,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    #main()
+    pytest.main(['TestCase/test_project.py'])
+    pytest.main(['TestCase/test_wiki.py'])
+

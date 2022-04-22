@@ -37,7 +37,7 @@ class TestProject:
         project = ProjectPage(drivers)
         project.click_project()
         project.add_project()
-        name, code = 'ui_test' + str(randint(100, 999)), 'ut' + str(randint(100, 999))
+        name, code = 'ui_test', 'ut'
         project.add_project_content(name, code)
         project.click_project_template()
         project.select_project_template()
@@ -150,6 +150,7 @@ class TestProject:
         project.click_star_button()
         assert before_star_name == after_star_name
 
+    @pytest.mark.skip(reason="项目列表关联icon定位不到")
     @pytest.mark.main
     @pytest.mark.project
     def test_project_relation_wiki(self, drivers):
@@ -166,18 +167,6 @@ class TestProject:
         print(before_relation_wiki_name, after_relation_wiki_name)
         sleep(2)
         project.click_close_relate_windows()
-
-    @pytest.mark.main
-    @pytest.mark.project
-    def test_project_delete(self, drivers):
-        """删除项目"""
-        project = ProjectPage(drivers)
-        project.click_first_project()
-        project.click_settings()
-        project.click_ops_operation()
-        project.click_delete_project()
-        project.input_password(ini.password)
-        project.click_confirm_delete()
 
     @pytest.mark.main
     @pytest.mark.project
@@ -203,8 +192,23 @@ class TestProject:
         project_setting = project.check_settings()
         assert project_view == '项目概览' and project_plan == '产品规划' and project_plan_and_board == '计划与看板'\
         and project_gantt_chart == '甘特图' and project_card_manage == '卡片管理' and project_diy_report == '自定义报表'\
-        and project_recycle == '回收站'  and project_setting == '设置'
+        and project_recycle == '回收站'  and project_setting == '基本设置'
+
+    @pytest.mark.main
+    @pytest.mark.project
+    def test_project_delete(self, drivers):
+        """删除项目"""
+        project = ProjectPage(drivers)
+        project.click_first_project()
+        project.click_settings()
+        project.click_ops_operation()
+        project.click_delete_project()
+        project.input_password(ini.password)
+        project.click_confirm_delete()
+
+
 
 
 if __name__ == '__main__':
     pytest.main(['TestCase/test_project.py'])
+

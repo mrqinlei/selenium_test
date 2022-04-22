@@ -31,7 +31,6 @@ def drivers(request):
 
         # driver = webdriver.Remote("http://localhost:4444/wd/hub",
         #                           webdriver.DesiredCapabilities.CHROME.copy(),)
-
         driver = webdriver.Remote(desired_capabilities=DesiredCapabilities().CHROME,
                                   command_executor='http://localhost:4444', options=chrome_options)
 

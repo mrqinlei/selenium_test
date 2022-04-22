@@ -106,7 +106,7 @@ class ProjectPage(WebPage):
 
     def get_relation_wiki(self):
         """悬停获得关联icon"""
-        self.move_and_stay(project['获得项目名称'])
+        self.move_and_stay(project['项目列表首个项目'])
 
     def click_relation_wiki_icon(self):
         """点击关联wiki的icon"""

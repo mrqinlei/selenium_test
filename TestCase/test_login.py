@@ -14,6 +14,7 @@ from utils.times import sleep
 
 @allure.feature("测试简单云登录模块")
 class TestLogin:
+    cookies = ""
 
     @pytest.mark.main
     @pytest.mark.login
@@ -44,6 +45,10 @@ class TestLogin:
         elif login.login_success():
             assert login.login_success() is True
 
+    # def test_get_cookies(self):
+    #     if self.cookies == "":
+    #         self.cookies = self._driver.get
+
 
 if __name__ == '__main__':
-    pytest.main(['TestCase/test_login.py'])
+    pytest.main(['TestCase/test_project.py'])

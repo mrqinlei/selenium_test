@@ -28,6 +28,8 @@ class WebPage(object):
         self.timeout = 20
         self.wait = WebDriverWait(self.driver, self.timeout)
 
+
+
     def get_url(self, url):
         """打开网址并验证"""
         self.driver.maximize_window()
